@@ -1,0 +1,1993 @@
+[2020-12-10 09:14:31,136] ERROR Uncaught exception in REST call to /connectors (org.apache.kafka.connect.runtime.rest.errors.ConnectExceptionMapper:61)
+com.fasterxml.jackson.databind.JsonMappingException: Unexpected character ('t' (code 116)): was expecting a colon to separate field name and value
+ at [Source: (org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream); line: 8, column: 25] (through reference chain: org.apache.kafka.connect.runtime.rest.entities.CreateConnectorRequest["config"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:397)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:356)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.wrapAndThrow(BeanDeserializerBase.java:1719)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeWithErrorWrapping(BeanDeserializer.java:530)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeUsingPropertyBased(BeanDeserializer.java:417)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1292)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:326)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:159)
+	at com.fasterxml.jackson.databind.ObjectReader._bind(ObjectReader.java:1682)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:977)
+	at com.fasterxml.jackson.jaxrs.base.ProviderBase.readFrom(ProviderBase.java:814)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$TerminalReaderInterceptor.invokeReadFrom(ReaderInterceptorExecutor.java:233)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$TerminalReaderInterceptor.aroundReadFrom(ReaderInterceptorExecutor.java:212)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:132)
+	at org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor.aroundReadFrom(MappableExceptionWrapperInterceptor.java:49)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:132)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.readFrom(MessageBodyFactory.java:1072)
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:877)
+	at org.glassfish.jersey.server.ContainerRequest.readEntity(ContainerRequest.java:274)
+	at org.glassfish.jersey.server.internal.inject.EntityParamValueParamProvider$EntityValueSupplier.apply(EntityParamValueParamProvider.java:73)
+	at org.glassfish.jersey.server.internal.inject.EntityParamValueParamProvider$EntityValueSupplier.apply(EntityParamValueParamProvider.java:56)
+	at org.glassfish.jersey.server.spi.internal.ParamValueFactoryWithSource.apply(ParamValueFactoryWithSource.java:50)
+	at org.glassfish.jersey.server.spi.internal.ParameterValueHelper.getParameterValues(ParameterValueHelper.java:68)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$AbstractMethodParamInvoker.getParamValues(JavaResourceMethodDispatcherProvider.java:109)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:366)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:319)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:760)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:547)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('t' (code 116)): was expecting a colon to separate field name and value
+ at [Source: (org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream); line: 8, column: 25]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:712)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:637)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon2(UTF8StreamJsonParser.java:3110)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon(UTF8StreamJsonParser.java:3088)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextFieldName(UTF8StreamJsonParser.java:1034)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer._readAndBindStringKeyMap(MapDeserializer.java:512)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:364)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:29)
+	at com.fasterxml.jackson.databind.deser.SettableBeanProperty.deserialize(SettableBeanProperty.java:530)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeWithErrorWrapping(BeanDeserializer.java:528)
+	... 65 more
+[2020-12-10 09:15:16,155] ERROR Uncaught exception in REST call to /connectors (org.apache.kafka.connect.runtime.rest.errors.ConnectExceptionMapper:61)
+com.fasterxml.jackson.databind.JsonMappingException: Unexpected character ('t' (code 116)): was expecting a colon to separate field name and value
+ at [Source: (org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream); line: 8, column: 25] (through reference chain: org.apache.kafka.connect.runtime.rest.entities.CreateConnectorRequest["config"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:397)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:356)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.wrapAndThrow(BeanDeserializerBase.java:1719)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeWithErrorWrapping(BeanDeserializer.java:530)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeUsingPropertyBased(BeanDeserializer.java:417)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.deserializeFromObjectUsingNonDefault(BeanDeserializerBase.java:1292)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:326)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:159)
+	at com.fasterxml.jackson.databind.ObjectReader._bind(ObjectReader.java:1682)
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:977)
+	at com.fasterxml.jackson.jaxrs.base.ProviderBase.readFrom(ProviderBase.java:814)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$TerminalReaderInterceptor.invokeReadFrom(ReaderInterceptorExecutor.java:233)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$TerminalReaderInterceptor.aroundReadFrom(ReaderInterceptorExecutor.java:212)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:132)
+	at org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor.aroundReadFrom(MappableExceptionWrapperInterceptor.java:49)
+	at org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.proceed(ReaderInterceptorExecutor.java:132)
+	at org.glassfish.jersey.message.internal.MessageBodyFactory.readFrom(MessageBodyFactory.java:1072)
+	at org.glassfish.jersey.message.internal.InboundMessageContext.readEntity(InboundMessageContext.java:877)
+	at org.glassfish.jersey.server.ContainerRequest.readEntity(ContainerRequest.java:274)
+	at org.glassfish.jersey.server.internal.inject.EntityParamValueParamProvider$EntityValueSupplier.apply(EntityParamValueParamProvider.java:73)
+	at org.glassfish.jersey.server.internal.inject.EntityParamValueParamProvider$EntityValueSupplier.apply(EntityParamValueParamProvider.java:56)
+	at org.glassfish.jersey.server.spi.internal.ParamValueFactoryWithSource.apply(ParamValueFactoryWithSource.java:50)
+	at org.glassfish.jersey.server.spi.internal.ParameterValueHelper.getParameterValues(ParameterValueHelper.java:68)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$AbstractMethodParamInvoker.getParamValues(JavaResourceMethodDispatcherProvider.java:109)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$ResponseOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:176)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:79)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:469)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:391)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:80)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:253)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:248)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:244)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:244)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:265)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:232)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:680)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:394)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:346)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:366)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:319)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:205)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:760)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:547)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:173)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('t' (code 116)): was expecting a colon to separate field name and value
+ at [Source: (org.glassfish.jersey.message.internal.ReaderInterceptorExecutor$UnCloseableInputStream); line: 8, column: 25]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1840)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:712)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:637)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon2(UTF8StreamJsonParser.java:3110)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._skipColon(UTF8StreamJsonParser.java:3088)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextFieldName(UTF8StreamJsonParser.java:1034)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer._readAndBindStringKeyMap(MapDeserializer.java:512)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:364)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:29)
+	at com.fasterxml.jackson.databind.deser.SettableBeanProperty.deserialize(SettableBeanProperty.java:530)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer._deserializeWithErrorWrapping(BeanDeserializer.java:528)
+	... 70 more
+[2020-12-10 09:16:18,717] INFO AbstractConfig values: 
+ (org.apache.kafka.common.config.AbstractConfig:354)
+[2020-12-10 09:16:18,757] INFO [Worker clientId=connect-1, groupId=connect-cluster] Connector mqtt-source config updated (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1526)
+[2020-12-10 09:16:19,263] INFO [Worker clientId=connect-1, groupId=connect-cluster] Rebalance started (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:225)
+[2020-12-10 09:16:19,263] INFO [Worker clientId=connect-1, groupId=connect-cluster] (Re-)joining group (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:553)
+[2020-12-10 09:16:19,314] INFO [Worker clientId=connect-1, groupId=connect-cluster] Successfully joined group with generation 2 (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:504)
+[2020-12-10 09:16:19,315] INFO [Worker clientId=connect-1, groupId=connect-cluster] Joined group at generation 2 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-1-18f0e6f9-2fa0-4853-a640-e763fa08a3f7', leaderUrl='http://127.0.1.1:8083/', offset=2, connectorIds=[mqtt-source], taskIds=[], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1681)
+[2020-12-10 09:16:19,316] INFO [Worker clientId=connect-1, groupId=connect-cluster] Starting connectors and tasks using config offset 2 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1208)
+[2020-12-10 09:16:19,326] INFO [Worker clientId=connect-1, groupId=connect-cluster] Starting connector mqtt-source (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1291)
+[2020-12-10 09:16:19,353] INFO Creating connector mqtt-source of type io.confluent.connect.mqtt.MqttSourceConnector (org.apache.kafka.connect.runtime.Worker:274)
+[2020-12-10 09:16:19,355] INFO SourceConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.mqtt.MqttSourceConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = mqtt-source
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SourceConnectorConfig:354)
+[2020-12-10 09:16:19,356] INFO EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.mqtt.MqttSourceConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = mqtt-source
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:354)
+[2020-12-10 09:16:19,366] INFO Instantiated connector mqtt-source with version 0.0.0.0 of type class io.confluent.connect.mqtt.MqttSourceConnector (org.apache.kafka.connect.runtime.Worker:284)
+[2020-12-10 09:16:19,378] INFO Finished creating connector mqtt-source (org.apache.kafka.connect.runtime.Worker:310)
+[2020-12-10 09:16:19,379] INFO [Worker clientId=connect-1, groupId=connect-cluster] Finished starting connectors and tasks (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1236)
+[2020-12-10 09:16:19,390] INFO MqttSourceConnectorConfig values: 
+	confluent.license = 
+	confluent.topic = _confluent-command
+	confluent.topic.bootstrap.servers = [localhost:9092]
+	confluent.topic.replication.factor = 1
+	kafka.topic = mqtt.temperature
+	max.retry.time.ms = 30000
+	mqtt.clean.session.enabled = true
+	mqtt.connect.timeout.seconds = 30
+	mqtt.keepalive.interval.seconds = 60
+	mqtt.password = [hidden]
+	mqtt.qos = 0
+	mqtt.server.uri = [tcp://127.0.0.1:1883]
+	mqtt.ssl.key.password = [hidden]
+	mqtt.ssl.key.store.password = [hidden]
+	mqtt.ssl.key.store.path = 
+	mqtt.ssl.trust.store.password = [hidden]
+	mqtt.ssl.trust.store.path = 
+	mqtt.topics = [temperature]
+	mqtt.username = 
+ (io.confluent.connect.mqtt.MqttSourceConnectorConfig:354)
+[2020-12-10 09:16:19,448] INFO Starting License Store (io.confluent.license.LicenseStore:244)
+[2020-12-10 09:16:19,449] INFO Starting KafkaBasedLog with topic _confluent-command (org.apache.kafka.connect.util.KafkaBasedLog:127)
+[2020-12-10 09:16:19,450] INFO AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = mqtt-source-license-manager
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:354)
+[2020-12-10 09:16:19,461] WARN The configuration 'replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 09:16:19,461] INFO Kafka version: 6.0.0-ccs (org.apache.kafka.common.utils.AppInfoParser:117)
+[2020-12-10 09:16:19,461] INFO Kafka commitId: 17b744c31e00868b (org.apache.kafka.common.utils.AppInfoParser:118)
+[2020-12-10 09:16:19,462] INFO Kafka startTimeMs: 1607609779461 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2020-12-10 09:16:19,668] INFO ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = mqtt-source-license-manager
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class io.confluent.license.LicenseStore$LicenseKeySerde
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 1
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.license.LicenseStore$LicenseMessageSerde
+ (org.apache.kafka.clients.producer.ProducerConfig:354)
+[2020-12-10 09:16:19,704] INFO Kafka version: 6.0.0-ccs (org.apache.kafka.common.utils.AppInfoParser:117)
+[2020-12-10 09:16:19,705] INFO Kafka commitId: 17b744c31e00868b (org.apache.kafka.common.utils.AppInfoParser:118)
+[2020-12-10 09:16:19,706] INFO Kafka startTimeMs: 1607609779704 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2020-12-10 09:16:19,713] INFO ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = mqtt-source-license-manager
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = null
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class io.confluent.license.LicenseStore$LicenseKeySerde
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.license.LicenseStore$LicenseMessageSerde
+ (org.apache.kafka.clients.consumer.ConsumerConfig:354)
+[2020-12-10 09:16:19,720] INFO [Producer clientId=mqtt-source-license-manager] Cluster ID: k63hXRb0SeW0on3FPsxu1w (org.apache.kafka.clients.Metadata:279)
+[2020-12-10 09:16:19,734] INFO Kafka version: 6.0.0-ccs (org.apache.kafka.common.utils.AppInfoParser:117)
+[2020-12-10 09:16:19,738] INFO Kafka commitId: 17b744c31e00868b (org.apache.kafka.common.utils.AppInfoParser:118)
+[2020-12-10 09:16:19,739] INFO Kafka startTimeMs: 1607609779734 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2020-12-10 09:16:19,751] INFO [Consumer clientId=mqtt-source-license-manager, groupId=null] Cluster ID: k63hXRb0SeW0on3FPsxu1w (org.apache.kafka.clients.Metadata:279)
+[2020-12-10 09:16:19,775] INFO [Consumer clientId=mqtt-source-license-manager, groupId=null] Subscribed to partition(s): _confluent-command-0 (org.apache.kafka.clients.consumer.KafkaConsumer:1120)
+[2020-12-10 09:16:19,775] INFO [Consumer clientId=mqtt-source-license-manager, groupId=null] Seeking to EARLIEST offset of partition _confluent-command-0 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 09:16:19,791] INFO [Consumer clientId=mqtt-source-license-manager, groupId=null] Resetting offset for partition _confluent-command-0 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 09:16:19,793] INFO Finished reading KafkaBasedLog for topic _confluent-command (org.apache.kafka.connect.util.KafkaBasedLog:161)
+[2020-12-10 09:16:19,793] INFO Started KafkaBasedLog for topic _confluent-command (org.apache.kafka.connect.util.KafkaBasedLog:163)
+[2020-12-10 09:16:19,794] INFO Started License Store (io.confluent.license.LicenseStore:246)
+[2020-12-10 09:16:19,794] INFO Validating Confluent License (io.confluent.connect.utils.licensing.ConnectLicenseManager:256)
+[2020-12-10 09:16:20,343] INFO AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = mqtt-source-license-manager
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:354)
+[2020-12-10 09:16:20,345] WARN The configuration 'replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 09:16:20,346] INFO Kafka version: 6.0.0-ccs (org.apache.kafka.common.utils.AppInfoParser:117)
+[2020-12-10 09:16:20,346] INFO Kafka commitId: 17b744c31e00868b (org.apache.kafka.common.utils.AppInfoParser:118)
+[2020-12-10 09:16:20,346] INFO Kafka startTimeMs: 1607609780346 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2020-12-10 09:16:20,567] INFO Trial license for Confluent Enterprise expires in 29 days on 2021-01-09. (io.confluent.license.LicenseManager:503)
+[2020-12-10 09:16:20,572] INFO Closing License Store (io.confluent.license.LicenseStore:252)
+[2020-12-10 09:16:20,572] INFO Stopping KafkaBasedLog for topic _confluent-command (org.apache.kafka.connect.util.KafkaBasedLog:167)
+[2020-12-10 09:16:20,588] INFO [Producer clientId=mqtt-source-license-manager] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms. (org.apache.kafka.clients.producer.KafkaProducer:1189)
+[2020-12-10 09:16:20,596] INFO Stopped KafkaBasedLog for topic _confluent-command (org.apache.kafka.connect.util.KafkaBasedLog:193)
+[2020-12-10 09:16:20,596] INFO Closed License Store (io.confluent.license.LicenseStore:254)
+[2020-12-10 09:16:20,614] INFO SourceConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.mqtt.MqttSourceConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = mqtt-source
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SourceConnectorConfig:354)
+[2020-12-10 09:16:20,618] INFO EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.mqtt.MqttSourceConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = mqtt-source
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:354)
+[2020-12-10 09:16:21,295] INFO [Worker clientId=connect-1, groupId=connect-cluster] Tasks [mqtt-source-0] configs updated (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1541)
+[2020-12-10 09:16:21,298] INFO [Worker clientId=connect-1, groupId=connect-cluster] Handling task config update by restarting tasks [] (org.apache.kafka.connect.runtime.distributed.DistributedHerder:641)
+[2020-12-10 09:16:21,298] INFO [Worker clientId=connect-1, groupId=connect-cluster] Rebalance started (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:225)
+[2020-12-10 09:16:21,299] INFO [Worker clientId=connect-1, groupId=connect-cluster] (Re-)joining group (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:553)
+[2020-12-10 09:16:21,306] INFO [Worker clientId=connect-1, groupId=connect-cluster] Successfully joined group with generation 3 (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:504)
+[2020-12-10 09:16:21,307] INFO [Worker clientId=connect-1, groupId=connect-cluster] Joined group at generation 3 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-1-18f0e6f9-2fa0-4853-a640-e763fa08a3f7', leaderUrl='http://127.0.1.1:8083/', offset=4, connectorIds=[mqtt-source], taskIds=[mqtt-source-0], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1681)
+[2020-12-10 09:16:21,308] INFO [Worker clientId=connect-1, groupId=connect-cluster] Starting connectors and tasks using config offset 4 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1208)
+[2020-12-10 09:16:21,310] INFO [Worker clientId=connect-1, groupId=connect-cluster] Starting task mqtt-source-0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1250)
+[2020-12-10 09:16:21,310] INFO Creating task mqtt-source-0 (org.apache.kafka.connect.runtime.Worker:509)
+[2020-12-10 09:16:21,312] INFO ConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.mqtt.MqttSourceConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = mqtt-source
+	predicates = []
+	tasks.max = 1
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig:354)
+[2020-12-10 09:16:21,312] INFO EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.mqtt.MqttSourceConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = mqtt-source
+	predicates = []
+	tasks.max = 1
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:354)
+[2020-12-10 09:16:21,317] INFO TaskConfig values: 
+	task.class = class io.confluent.connect.mqtt.MqttSourceTask
+ (org.apache.kafka.connect.runtime.TaskConfig:354)
+[2020-12-10 09:16:21,318] INFO Instantiated task mqtt-source-0 with version 0.0.0.0 of type io.confluent.connect.mqtt.MqttSourceTask (org.apache.kafka.connect.runtime.Worker:524)
+[2020-12-10 09:16:21,319] INFO StringConverterConfig values: 
+	converter.encoding = UTF8
+	converter.type = key
+ (org.apache.kafka.connect.storage.StringConverterConfig:354)
+[2020-12-10 09:16:21,320] INFO Set up the key converter class org.apache.kafka.connect.storage.StringConverter for task mqtt-source-0 using the worker config (org.apache.kafka.connect.runtime.Worker:537)
+[2020-12-10 09:16:21,320] INFO JsonConverterConfig values: 
+	converter.type = value
+	decimal.format = BASE64
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:354)
+[2020-12-10 09:16:21,322] INFO Set up the value converter class org.apache.kafka.connect.json.JsonConverter for task mqtt-source-0 using the worker config (org.apache.kafka.connect.runtime.Worker:543)
+[2020-12-10 09:16:21,322] INFO Set up the header converter class org.apache.kafka.connect.storage.SimpleHeaderConverter for task mqtt-source-0 using the worker config (org.apache.kafka.connect.runtime.Worker:550)
+[2020-12-10 09:16:21,335] INFO SourceConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.mqtt.MqttSourceConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = mqtt-source
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SourceConnectorConfig:354)
+[2020-12-10 09:16:21,336] INFO EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.mqtt.MqttSourceConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = mqtt-source
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:354)
+[2020-12-10 09:16:21,350] INFO Initializing: org.apache.kafka.connect.runtime.TransformationChain{} (org.apache.kafka.connect.runtime.Worker:606)
+[2020-12-10 09:16:21,354] INFO ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9090, localhost:9092, localhost:9093, localhost:9094]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = connector-producer-mqtt-source-0
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 2147483647
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 9223372036854775807
+	max.in.flight.requests.per.connection = 1
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 2147483647
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+ (org.apache.kafka.clients.producer.ProducerConfig:354)
+[2020-12-10 09:16:21,358] WARN The configuration 'metrics.context.connect.kafka.cluster.id' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 09:16:21,358] WARN The configuration 'metrics.context.connect.group.id' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 09:16:21,358] INFO Kafka version: 6.0.0-ccs (org.apache.kafka.common.utils.AppInfoParser:117)
+[2020-12-10 09:16:21,358] INFO Kafka commitId: 17b744c31e00868b (org.apache.kafka.common.utils.AppInfoParser:118)
+[2020-12-10 09:16:21,358] INFO Kafka startTimeMs: 1607609781358 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2020-12-10 09:16:21,379] INFO [Worker clientId=connect-1, groupId=connect-cluster] Finished starting connectors and tasks (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1236)
+[2020-12-10 09:16:21,382] INFO [Producer clientId=connector-producer-mqtt-source-0] Cluster ID: k63hXRb0SeW0on3FPsxu1w (org.apache.kafka.clients.Metadata:279)
+[2020-12-10 09:16:21,390] INFO MqttSourceConnectorConfig values: 
+	confluent.license = 
+	confluent.topic = _confluent-command
+	confluent.topic.bootstrap.servers = [localhost:9092]
+	confluent.topic.replication.factor = 1
+	kafka.topic = mqtt.temperature
+	max.retry.time.ms = 30000
+	mqtt.clean.session.enabled = true
+	mqtt.connect.timeout.seconds = 30
+	mqtt.keepalive.interval.seconds = 60
+	mqtt.password = [hidden]
+	mqtt.qos = 0
+	mqtt.server.uri = [tcp://127.0.0.1:1883]
+	mqtt.ssl.key.password = [hidden]
+	mqtt.ssl.key.store.password = [hidden]
+	mqtt.ssl.key.store.path = 
+	mqtt.ssl.trust.store.password = [hidden]
+	mqtt.ssl.trust.store.path = 
+	mqtt.topics = [temperature]
+	mqtt.username = 
+ (io.confluent.connect.mqtt.MqttSourceConnectorConfig:354)
+[2020-12-10 09:16:21,515] INFO Connecting to MQTT server. (io.confluent.connect.mqtt.MqttSourceTask:90)
+[2020-12-10 09:16:21,554] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:16:21,554] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:16:21,554] ERROR WorkerSourceTask{id=mqtt-source-0} Task threw an uncaught and unrecoverable exception (org.apache.kafka.connect.runtime.WorkerTask:187)
+org.apache.kafka.connect.errors.ConnectException: Unable to connect to server (32103) - java.net.ConnectException: Connection refused (Connection refused)
+	at io.confluent.connect.mqtt.MqttSourceTask.doStart(MqttSourceTask.java:94)
+	at io.confluent.connect.mqtt.MqttSourceTask.start(MqttSourceTask.java:62)
+	at org.apache.kafka.connect.runtime.WorkerSourceTask.execute(WorkerSourceTask.java:232)
+	at org.apache.kafka.connect.runtime.WorkerTask.doRun(WorkerTask.java:185)
+	at org.apache.kafka.connect.runtime.WorkerTask.run(WorkerTask.java:235)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: Unable to connect to server (32103) - java.net.ConnectException: Connection refused (Connection refused)
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80)
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:724)
+	... 1 more
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.base/java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74)
+	... 2 more
+[2020-12-10 09:16:21,555] ERROR WorkerSourceTask{id=mqtt-source-0} Task is being killed and will not recover until manually restarted (org.apache.kafka.connect.runtime.WorkerTask:188)
+[2020-12-10 09:16:21,555] INFO [Producer clientId=connector-producer-mqtt-source-0] Closing the Kafka producer with timeoutMillis = 30000 ms. (org.apache.kafka.clients.producer.KafkaProducer:1189)
+[2020-12-10 09:16:31,375] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:16:31,376] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:16:41,377] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:16:41,377] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:16:51,378] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:16:51,379] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:17:01,379] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:17:01,380] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:17:11,380] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:17:11,380] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:17:21,382] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:17:21,382] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:17:31,383] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:17:31,383] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:17:41,385] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:17:41,385] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:17:51,385] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:17:51,385] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:18:01,387] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:18:01,387] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:18:11,388] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:18:11,389] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:18:21,389] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:18:21,389] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:18:31,390] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:18:31,390] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:18:41,391] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:18:41,391] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:18:51,391] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:18:51,392] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:19:01,392] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:19:01,393] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:19:11,394] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:19:11,394] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:19:21,396] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:19:21,396] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:19:31,397] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:19:31,397] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:19:41,398] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:19:41,398] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:19:51,399] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:19:51,399] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:20:01,400] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:20:01,400] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:20:11,401] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:20:11,401] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:20:21,402] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:20:21,402] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:20:31,403] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:20:31,403] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:20:41,404] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:20:41,404] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:20:51,405] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:20:51,406] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:21:01,406] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:21:01,407] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:21:11,408] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:21:11,408] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:21:21,409] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:21:21,409] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:21:31,410] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:21:31,410] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:21:41,411] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:21:41,411] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:21:51,411] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:21:51,412] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:22:01,412] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:22:01,412] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:22:11,414] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:22:11,414] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:22:21,415] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:22:21,415] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:22:31,415] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:22:31,416] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:22:41,417] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:22:41,417] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:22:51,418] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:22:51,419] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:23:01,419] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:23:01,419] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:23:11,421] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:23:11,421] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:23:21,421] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:23:21,421] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:23:31,423] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:23:31,423] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:23:41,424] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:23:41,425] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:23:51,425] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:23:51,425] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:24:01,428] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:24:01,429] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:24:11,429] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:24:11,430] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:24:15,027] INFO [Worker clientId=connect-1, groupId=connect-cluster] Session key updated (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1570)
+[2020-12-10 09:24:21,431] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:24:21,431] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:24:31,432] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:24:31,432] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:24:41,433] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:24:41,433] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:24:51,434] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:24:51,434] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:25:01,437] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:25:01,437] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:25:11,438] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:25:11,438] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:25:21,439] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:25:21,439] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:25:31,440] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:25:31,440] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:25:41,442] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:25:41,442] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:25:51,443] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:25:51,443] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:26:01,444] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:26:01,444] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:26:11,445] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:26:11,446] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:26:21,447] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:26:21,447] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:26:31,448] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:26:31,448] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:26:41,449] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:26:41,449] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:26:51,450] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:26:51,450] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:27:01,452] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:27:01,452] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:27:09,883] INFO AbstractConfig values: 
+ (org.apache.kafka.common.config.AbstractConfig:354)
+[2020-12-10 09:27:11,453] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:27:11,453] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:27:21,454] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:27:21,454] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:27:31,455] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:27:31,456] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:27:41,456] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:27:41,457] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:27:51,457] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:27:51,458] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:28:01,459] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:28:01,459] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:28:11,461] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:28:11,462] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:28:21,462] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:28:21,462] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:28:31,462] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:28:31,463] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:28:41,463] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:28:41,463] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:28:51,464] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:28:51,464] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:29:01,465] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:29:01,465] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:29:11,466] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:29:11,466] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:29:21,467] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:29:21,467] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:29:31,469] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:29:31,470] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:29:39,131] INFO Successfully processed removal of connector 'mqtt-source' (org.apache.kafka.connect.storage.KafkaConfigBackingStore:578)
+[2020-12-10 09:29:39,134] INFO [Worker clientId=connect-1, groupId=connect-cluster] Connector mqtt-source config removed (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1513)
+[2020-12-10 09:29:39,635] INFO [Worker clientId=connect-1, groupId=connect-cluster] Handling connector-only config update by stopping connector mqtt-source (org.apache.kafka.connect.runtime.distributed.DistributedHerder:587)
+[2020-12-10 09:29:39,635] INFO Stopping connector mqtt-source (org.apache.kafka.connect.runtime.Worker:387)
+[2020-12-10 09:29:39,635] INFO Scheduled shutdown for WorkerConnector{id=mqtt-source} (org.apache.kafka.connect.runtime.WorkerConnector:249)
+[2020-12-10 09:29:39,640] INFO Completed shutdown for WorkerConnector{id=mqtt-source} (org.apache.kafka.connect.runtime.WorkerConnector:269)
+[2020-12-10 09:29:39,642] INFO [Worker clientId=connect-1, groupId=connect-cluster] Rebalance started (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:225)
+[2020-12-10 09:29:39,642] INFO [Worker clientId=connect-1, groupId=connect-cluster] (Re-)joining group (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:553)
+[2020-12-10 09:29:39,657] INFO [Worker clientId=connect-1, groupId=connect-cluster] Successfully joined group with generation 4 (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:504)
+[2020-12-10 09:29:39,675] INFO Stopping connector mqtt-source (org.apache.kafka.connect.runtime.Worker:387)
+[2020-12-10 09:29:39,675] WARN Ignoring stop request for unowned connector mqtt-source (org.apache.kafka.connect.runtime.Worker:390)
+[2020-12-10 09:29:39,675] WARN Ignoring await stop request for non-present connector mqtt-source (org.apache.kafka.connect.runtime.Worker:415)
+[2020-12-10 09:29:39,680] INFO Stopping task mqtt-source-0 (org.apache.kafka.connect.runtime.Worker:836)
+[2020-12-10 09:29:39,691] INFO [Worker clientId=connect-1, groupId=connect-cluster] Finished stopping tasks in preparation for rebalance (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1759)
+[2020-12-10 09:29:39,694] INFO [Worker clientId=connect-1, groupId=connect-cluster] Finished flushing status backing store in preparation for rebalance (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1778)
+[2020-12-10 09:29:39,694] INFO [Worker clientId=connect-1, groupId=connect-cluster] Joined group at generation 4 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-1-18f0e6f9-2fa0-4853-a640-e763fa08a3f7', leaderUrl='http://127.0.1.1:8083/', offset=7, connectorIds=[], taskIds=[], revokedConnectorIds=[mqtt-source], revokedTaskIds=[mqtt-source-0], delay=0} with rebalance delay: 0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1681)
+[2020-12-10 09:29:39,701] INFO [Worker clientId=connect-1, groupId=connect-cluster] Starting connectors and tasks using config offset 7 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1208)
+[2020-12-10 09:29:39,702] INFO [Worker clientId=connect-1, groupId=connect-cluster] Finished starting connectors and tasks (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1236)
+[2020-12-10 09:29:39,702] INFO [Worker clientId=connect-1, groupId=connect-cluster] Rebalance started (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:225)
+[2020-12-10 09:29:39,702] INFO [Worker clientId=connect-1, groupId=connect-cluster] (Re-)joining group (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:553)
+[2020-12-10 09:29:39,733] INFO [Worker clientId=connect-1, groupId=connect-cluster] Successfully joined group with generation 5 (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:504)
+[2020-12-10 09:29:39,733] INFO [Worker clientId=connect-1, groupId=connect-cluster] Joined group at generation 5 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-1-18f0e6f9-2fa0-4853-a640-e763fa08a3f7', leaderUrl='http://127.0.1.1:8083/', offset=7, connectorIds=[], taskIds=[], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1681)
+[2020-12-10 09:29:39,733] INFO [Worker clientId=connect-1, groupId=connect-cluster] Starting connectors and tasks using config offset 7 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1208)
+[2020-12-10 09:29:39,733] INFO [Worker clientId=connect-1, groupId=connect-cluster] Finished starting connectors and tasks (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1236)
+[2020-12-10 09:30:58,601] INFO AbstractConfig values: 
+ (org.apache.kafka.common.config.AbstractConfig:354)
+[2020-12-10 09:30:58,610] INFO [Worker clientId=connect-1, groupId=connect-cluster] Connector mqtt-source config updated (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1526)
+[2020-12-10 09:30:59,113] INFO [Worker clientId=connect-1, groupId=connect-cluster] Rebalance started (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:225)
+[2020-12-10 09:30:59,113] INFO [Worker clientId=connect-1, groupId=connect-cluster] (Re-)joining group (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:553)
+[2020-12-10 09:30:59,120] INFO [Worker clientId=connect-1, groupId=connect-cluster] Successfully joined group with generation 6 (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:504)
+[2020-12-10 09:30:59,121] INFO [Worker clientId=connect-1, groupId=connect-cluster] Joined group at generation 6 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-1-18f0e6f9-2fa0-4853-a640-e763fa08a3f7', leaderUrl='http://127.0.1.1:8083/', offset=8, connectorIds=[mqtt-source], taskIds=[], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1681)
+[2020-12-10 09:30:59,121] INFO [Worker clientId=connect-1, groupId=connect-cluster] Starting connectors and tasks using config offset 8 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1208)
+[2020-12-10 09:30:59,122] INFO [Worker clientId=connect-1, groupId=connect-cluster] Starting connector mqtt-source (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1291)
+[2020-12-10 09:30:59,122] INFO Creating connector mqtt-source of type io.confluent.connect.mqtt.MqttSourceConnector (org.apache.kafka.connect.runtime.Worker:274)
+[2020-12-10 09:30:59,123] INFO SourceConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.mqtt.MqttSourceConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = mqtt-source
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SourceConnectorConfig:354)
+[2020-12-10 09:30:59,124] INFO EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.mqtt.MqttSourceConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = mqtt-source
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:354)
+[2020-12-10 09:30:59,125] INFO Instantiated connector mqtt-source with version 0.0.0.0 of type class io.confluent.connect.mqtt.MqttSourceConnector (org.apache.kafka.connect.runtime.Worker:284)
+[2020-12-10 09:30:59,126] INFO Finished creating connector mqtt-source (org.apache.kafka.connect.runtime.Worker:310)
+[2020-12-10 09:30:59,127] INFO MqttSourceConnectorConfig values: 
+	confluent.license = 
+	confluent.topic = _confluent-command
+	confluent.topic.bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	confluent.topic.replication.factor = 1
+	kafka.topic = test6
+	max.retry.time.ms = 30000
+	mqtt.clean.session.enabled = true
+	mqtt.connect.timeout.seconds = 30
+	mqtt.keepalive.interval.seconds = 60
+	mqtt.password = [hidden]
+	mqtt.qos = 0
+	mqtt.server.uri = [tcp://broker.alphatelecare.com:1884]
+	mqtt.ssl.key.password = [hidden]
+	mqtt.ssl.key.store.password = [hidden]
+	mqtt.ssl.key.store.path = 
+	mqtt.ssl.trust.store.password = [hidden]
+	mqtt.ssl.trust.store.path = 
+	mqtt.topics = [ION/+/CURRENTALARM]
+	mqtt.username = admin
+ (io.confluent.connect.mqtt.MqttSourceConnectorConfig:354)
+[2020-12-10 09:30:59,127] INFO [Worker clientId=connect-1, groupId=connect-cluster] Finished starting connectors and tasks (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1236)
+[2020-12-10 09:30:59,128] INFO Starting License Store (io.confluent.license.LicenseStore:244)
+[2020-12-10 09:30:59,133] INFO Starting KafkaBasedLog with topic _confluent-command (org.apache.kafka.connect.util.KafkaBasedLog:127)
+[2020-12-10 09:30:59,133] INFO AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	client.dns.lookup = use_all_dns_ips
+	client.id = mqtt-source-license-manager
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:354)
+[2020-12-10 09:30:59,136] WARN The configuration 'replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 09:30:59,136] INFO Kafka version: 6.0.0-ccs (org.apache.kafka.common.utils.AppInfoParser:117)
+[2020-12-10 09:30:59,137] INFO Kafka commitId: 17b744c31e00868b (org.apache.kafka.common.utils.AppInfoParser:118)
+[2020-12-10 09:30:59,137] INFO Kafka startTimeMs: 1607610659136 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2020-12-10 09:30:59,157] INFO ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = mqtt-source-license-manager
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class io.confluent.license.LicenseStore$LicenseKeySerde
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 1
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.license.LicenseStore$LicenseMessageSerde
+ (org.apache.kafka.clients.producer.ProducerConfig:354)
+[2020-12-10 09:30:59,161] INFO Kafka version: 6.0.0-ccs (org.apache.kafka.common.utils.AppInfoParser:117)
+[2020-12-10 09:30:59,161] INFO Kafka commitId: 17b744c31e00868b (org.apache.kafka.common.utils.AppInfoParser:118)
+[2020-12-10 09:30:59,161] INFO Kafka startTimeMs: 1607610659161 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2020-12-10 09:30:59,162] INFO ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = mqtt-source-license-manager
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = null
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class io.confluent.license.LicenseStore$LicenseKeySerde
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class io.confluent.license.LicenseStore$LicenseMessageSerde
+ (org.apache.kafka.clients.consumer.ConsumerConfig:354)
+[2020-12-10 09:30:59,166] INFO Kafka version: 6.0.0-ccs (org.apache.kafka.common.utils.AppInfoParser:117)
+[2020-12-10 09:30:59,166] INFO Kafka commitId: 17b744c31e00868b (org.apache.kafka.common.utils.AppInfoParser:118)
+[2020-12-10 09:30:59,166] INFO Kafka startTimeMs: 1607610659166 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2020-12-10 09:30:59,184] INFO [Consumer clientId=mqtt-source-license-manager, groupId=null] Cluster ID: k63hXRb0SeW0on3FPsxu1w (org.apache.kafka.clients.Metadata:279)
+[2020-12-10 09:30:59,184] INFO [Producer clientId=mqtt-source-license-manager] Cluster ID: k63hXRb0SeW0on3FPsxu1w (org.apache.kafka.clients.Metadata:279)
+[2020-12-10 09:30:59,202] INFO [Consumer clientId=mqtt-source-license-manager, groupId=null] Subscribed to partition(s): _confluent-command-0 (org.apache.kafka.clients.consumer.KafkaConsumer:1120)
+[2020-12-10 09:30:59,202] INFO [Consumer clientId=mqtt-source-license-manager, groupId=null] Seeking to EARLIEST offset of partition _confluent-command-0 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 09:30:59,212] INFO [Consumer clientId=mqtt-source-license-manager, groupId=null] Resetting offset for partition _confluent-command-0 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 09:30:59,220] INFO Finished reading KafkaBasedLog for topic _confluent-command (org.apache.kafka.connect.util.KafkaBasedLog:161)
+[2020-12-10 09:30:59,220] INFO Started KafkaBasedLog for topic _confluent-command (org.apache.kafka.connect.util.KafkaBasedLog:163)
+[2020-12-10 09:30:59,220] INFO Started License Store (io.confluent.license.LicenseStore:246)
+[2020-12-10 09:30:59,220] INFO Validating Confluent License (io.confluent.connect.utils.licensing.ConnectLicenseManager:256)
+[2020-12-10 09:30:59,727] INFO Trial license for Confluent Enterprise expires in 29 days on 2021-01-09. (io.confluent.license.LicenseManager:503)
+[2020-12-10 09:30:59,728] INFO Closing License Store (io.confluent.license.LicenseStore:252)
+[2020-12-10 09:30:59,728] INFO Stopping KafkaBasedLog for topic _confluent-command (org.apache.kafka.connect.util.KafkaBasedLog:167)
+[2020-12-10 09:30:59,728] INFO [Producer clientId=mqtt-source-license-manager] Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms. (org.apache.kafka.clients.producer.KafkaProducer:1189)
+[2020-12-10 09:30:59,733] INFO Stopped KafkaBasedLog for topic _confluent-command (org.apache.kafka.connect.util.KafkaBasedLog:193)
+[2020-12-10 09:30:59,733] INFO Closed License Store (io.confluent.license.LicenseStore:254)
+[2020-12-10 09:30:59,735] INFO SourceConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.mqtt.MqttSourceConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = mqtt-source
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SourceConnectorConfig:354)
+[2020-12-10 09:30:59,735] INFO EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.mqtt.MqttSourceConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = mqtt-source
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:354)
+[2020-12-10 09:31:00,637] INFO [Worker clientId=connect-1, groupId=connect-cluster] Tasks [mqtt-source-0] configs updated (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1541)
+[2020-12-10 09:31:01,139] INFO [Worker clientId=connect-1, groupId=connect-cluster] Handling task config update by restarting tasks [] (org.apache.kafka.connect.runtime.distributed.DistributedHerder:641)
+[2020-12-10 09:31:01,139] INFO [Worker clientId=connect-1, groupId=connect-cluster] Rebalance started (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:225)
+[2020-12-10 09:31:01,140] INFO [Worker clientId=connect-1, groupId=connect-cluster] (Re-)joining group (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:553)
+[2020-12-10 09:31:01,145] INFO [Worker clientId=connect-1, groupId=connect-cluster] Successfully joined group with generation 7 (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:504)
+[2020-12-10 09:31:01,146] INFO [Worker clientId=connect-1, groupId=connect-cluster] Joined group at generation 7 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-1-18f0e6f9-2fa0-4853-a640-e763fa08a3f7', leaderUrl='http://127.0.1.1:8083/', offset=10, connectorIds=[mqtt-source], taskIds=[mqtt-source-0], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1681)
+[2020-12-10 09:31:01,148] INFO [Worker clientId=connect-1, groupId=connect-cluster] Starting connectors and tasks using config offset 10 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1208)
+[2020-12-10 09:31:01,150] INFO [Worker clientId=connect-1, groupId=connect-cluster] Starting task mqtt-source-0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1250)
+[2020-12-10 09:31:01,151] INFO Creating task mqtt-source-0 (org.apache.kafka.connect.runtime.Worker:509)
+[2020-12-10 09:31:01,152] INFO ConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.mqtt.MqttSourceConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = mqtt-source
+	predicates = []
+	tasks.max = 1
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig:354)
+[2020-12-10 09:31:01,153] INFO EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.mqtt.MqttSourceConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = mqtt-source
+	predicates = []
+	tasks.max = 1
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:354)
+[2020-12-10 09:31:01,153] INFO TaskConfig values: 
+	task.class = class io.confluent.connect.mqtt.MqttSourceTask
+ (org.apache.kafka.connect.runtime.TaskConfig:354)
+[2020-12-10 09:31:01,153] INFO Instantiated task mqtt-source-0 with version 0.0.0.0 of type io.confluent.connect.mqtt.MqttSourceTask (org.apache.kafka.connect.runtime.Worker:524)
+[2020-12-10 09:31:01,153] INFO StringConverterConfig values: 
+	converter.encoding = UTF8
+	converter.type = key
+ (org.apache.kafka.connect.storage.StringConverterConfig:354)
+[2020-12-10 09:31:01,154] INFO Set up the key converter class org.apache.kafka.connect.storage.StringConverter for task mqtt-source-0 using the worker config (org.apache.kafka.connect.runtime.Worker:537)
+[2020-12-10 09:31:01,155] INFO JsonConverterConfig values: 
+	converter.type = value
+	decimal.format = BASE64
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:354)
+[2020-12-10 09:31:01,155] INFO Set up the value converter class org.apache.kafka.connect.json.JsonConverter for task mqtt-source-0 using the worker config (org.apache.kafka.connect.runtime.Worker:543)
+[2020-12-10 09:31:01,155] INFO Set up the header converter class org.apache.kafka.connect.storage.SimpleHeaderConverter for task mqtt-source-0 using the worker config (org.apache.kafka.connect.runtime.Worker:550)
+[2020-12-10 09:31:01,167] INFO SourceConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.mqtt.MqttSourceConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = mqtt-source
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SourceConnectorConfig:354)
+[2020-12-10 09:31:01,167] INFO EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = io.confluent.connect.mqtt.MqttSourceConnector
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = mqtt-source
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:354)
+[2020-12-10 09:31:01,168] INFO Initializing: org.apache.kafka.connect.runtime.TransformationChain{} (org.apache.kafka.connect.runtime.Worker:606)
+[2020-12-10 09:31:01,168] INFO ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9090, localhost:9092, localhost:9093, localhost:9094]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = connector-producer-mqtt-source-0
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 2147483647
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 9223372036854775807
+	max.in.flight.requests.per.connection = 1
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 2147483647
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+ (org.apache.kafka.clients.producer.ProducerConfig:354)
+[2020-12-10 09:31:01,188] WARN The configuration 'metrics.context.connect.kafka.cluster.id' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 09:31:01,189] WARN The configuration 'metrics.context.connect.group.id' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 09:31:01,189] INFO Kafka version: 6.0.0-ccs (org.apache.kafka.common.utils.AppInfoParser:117)
+[2020-12-10 09:31:01,189] INFO Kafka commitId: 17b744c31e00868b (org.apache.kafka.common.utils.AppInfoParser:118)
+[2020-12-10 09:31:01,190] INFO Kafka startTimeMs: 1607610661189 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2020-12-10 09:31:01,191] WARN [Producer clientId=connector-producer-mqtt-source-0] Connection to node -1 (localhost/127.0.0.1:9090) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient:757)
+[2020-12-10 09:31:01,192] WARN [Producer clientId=connector-producer-mqtt-source-0] Bootstrap broker localhost:9090 (id: -1 rack: null) disconnected (org.apache.kafka.clients.NetworkClient:1033)
+[2020-12-10 09:31:01,193] INFO [Worker clientId=connect-1, groupId=connect-cluster] Finished starting connectors and tasks (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1236)
+[2020-12-10 09:31:01,198] INFO MqttSourceConnectorConfig values: 
+	confluent.license = 
+	confluent.topic = _confluent-command
+	confluent.topic.bootstrap.servers = [localhost:9092, localhost:9093, localhost:9094]
+	confluent.topic.replication.factor = 1
+	kafka.topic = test6
+	max.retry.time.ms = 30000
+	mqtt.clean.session.enabled = true
+	mqtt.connect.timeout.seconds = 30
+	mqtt.keepalive.interval.seconds = 60
+	mqtt.password = [hidden]
+	mqtt.qos = 0
+	mqtt.server.uri = [tcp://broker.alphatelecare.com:1884]
+	mqtt.ssl.key.password = [hidden]
+	mqtt.ssl.key.store.password = [hidden]
+	mqtt.ssl.key.store.path = 
+	mqtt.ssl.trust.store.password = [hidden]
+	mqtt.ssl.trust.store.path = 
+	mqtt.topics = [ION/+/CURRENTALARM]
+	mqtt.username = admin
+ (io.confluent.connect.mqtt.MqttSourceConnectorConfig:354)
+[2020-12-10 09:31:01,212] INFO Connecting to MQTT server. (io.confluent.connect.mqtt.MqttSourceTask:90)
+[2020-12-10 09:31:01,295] INFO [Producer clientId=connector-producer-mqtt-source-0] Cluster ID: k63hXRb0SeW0on3FPsxu1w (org.apache.kafka.clients.Metadata:279)
+[2020-12-10 09:31:02,732] INFO Subscribing to ION/+/CURRENTALARM with QOS of 0 (io.confluent.connect.mqtt.MqttSourceTask:103)
+[2020-12-10 09:31:02,855] INFO WorkerSourceTask{id=mqtt-source-0} Source task finished initialization and start (org.apache.kafka.connect.runtime.WorkerSourceTask:233)
+[2020-12-10 09:31:11,194] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:31:11,195] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:31:11,219] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 24 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:31:21,219] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:31:21,220] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:31:21,226] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 6 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:31:31,227] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:31:31,228] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:31:31,244] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 16 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:31:41,245] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:31:41,245] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:31:41,252] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 7 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:31:51,253] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:31:51,253] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:31:51,261] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 8 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:32:01,262] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:32:01,262] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:32:01,270] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 8 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:32:11,271] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:32:11,271] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:32:11,277] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 6 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:32:21,278] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:32:21,278] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:32:21,287] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 9 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:32:31,288] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:32:31,288] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:32:31,295] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 7 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:32:41,296] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:32:41,296] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:32:41,303] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 7 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:32:51,304] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:32:51,304] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:32:51,309] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:33:01,311] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:33:01,311] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:33:01,318] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 7 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:33:11,319] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:33:11,320] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:33:11,325] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:33:21,326] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:33:21,327] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:33:21,333] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 6 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:33:31,334] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:33:31,334] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:33:31,340] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 6 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:33:41,341] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:33:41,342] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:33:41,350] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 8 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:33:51,351] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:33:51,352] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:33:51,357] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:34:01,358] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:34:01,358] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:34:01,364] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 6 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:34:11,364] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:34:11,365] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:34:11,370] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:34:21,371] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:34:21,372] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:34:21,378] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 6 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:34:31,379] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:34:31,379] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:34:31,392] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 13 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:34:41,393] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:34:41,393] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:34:41,400] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 7 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:34:51,400] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:34:51,400] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:34:51,405] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:35:01,408] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:35:01,408] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:35:01,413] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:35:11,414] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:35:11,414] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:35:11,418] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:35:21,420] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:35:21,420] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:35:21,428] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 8 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:35:31,429] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:35:31,429] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:35:31,441] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 12 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:35:41,442] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:35:41,442] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:35:41,449] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 7 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:35:51,450] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:35:51,450] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:35:51,455] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:36:01,456] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:36:01,457] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:36:01,465] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 8 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:36:11,466] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:36:11,466] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:36:11,478] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 12 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:36:21,479] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:36:21,479] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:36:21,486] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 7 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:36:31,487] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:36:31,487] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:36:31,492] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:36:41,493] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:36:41,493] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:36:41,498] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:36:51,499] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:36:51,499] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:36:51,507] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 8 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:37:01,509] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:37:01,509] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:37:01,514] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:37:11,515] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:37:11,515] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:37:11,521] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 6 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:37:21,522] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:37:21,522] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:37:21,528] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 6 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:37:31,529] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:37:31,529] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:37:31,534] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:37:41,535] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:37:41,535] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:37:41,542] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 7 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:37:51,543] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:37:51,544] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:37:51,552] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 9 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:38:01,553] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:38:01,553] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:38:01,562] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 9 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:38:11,563] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:38:11,563] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:38:11,568] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:38:21,569] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:38:21,569] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:38:21,575] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 6 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:38:31,576] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:38:31,577] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:38:31,582] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:38:41,583] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:38:41,583] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:38:41,588] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:38:51,588] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:38:51,588] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:38:51,593] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:39:01,594] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:39:01,594] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:39:01,599] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:39:11,600] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:39:11,600] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:39:11,606] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 6 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:39:21,607] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:39:21,607] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:39:21,634] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 27 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:39:31,635] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:39:31,635] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:39:31,652] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 17 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:39:41,652] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:39:41,653] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:39:41,658] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:39:51,660] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:39:51,660] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:39:51,664] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:40:01,666] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:40:01,666] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:40:01,671] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:40:11,672] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:40:11,672] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:40:11,675] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 3 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:40:21,677] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:40:21,677] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:40:21,680] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 3 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:40:31,681] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:40:31,681] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:40:31,689] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 8 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:40:41,691] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:40:41,691] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:40:41,696] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:40:51,698] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:40:51,699] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:40:51,703] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:41:01,706] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:41:01,706] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:41:01,710] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:41:11,710] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:41:11,711] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:41:11,716] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:41:21,717] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:41:21,718] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:41:21,722] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:41:31,723] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:41:31,724] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:41:31,729] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:41:41,729] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:41:41,730] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:41:41,734] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:41:51,735] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:41:51,735] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:41:51,740] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:42:01,742] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:42:01,742] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:42:01,746] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:42:11,747] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:42:11,747] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:42:11,751] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:42:21,753] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:42:21,753] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:42:21,758] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:42:31,760] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:42:31,760] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:42:31,764] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:42:41,766] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:42:41,766] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:42:41,772] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 6 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:42:51,774] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:42:51,774] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:42:51,779] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:43:01,781] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:43:01,781] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:43:01,790] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 9 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:43:11,791] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:43:11,791] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:43:11,797] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 6 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:43:21,798] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:43:21,799] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:43:21,804] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:43:31,806] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:43:31,806] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:43:31,810] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:43:41,811] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:43:41,812] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:43:41,815] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 3 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:43:51,816] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:43:51,816] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:43:51,822] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:44:01,823] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:44:01,824] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:44:01,828] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:44:11,828] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:44:11,829] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:44:11,833] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:44:21,834] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:44:21,834] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:44:21,839] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:44:31,842] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:44:31,842] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:44:31,865] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 23 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:44:41,867] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:44:41,867] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:44:41,873] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 6 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:44:51,875] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:44:51,876] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:44:51,882] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 6 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:45:01,884] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:45:01,884] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:45:01,889] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:45:11,890] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:45:11,891] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:45:11,894] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 3 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:45:21,895] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:45:21,895] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:45:21,899] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:45:31,901] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:45:31,901] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:45:31,927] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 26 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:45:41,928] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:45:41,928] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:45:41,933] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:45:51,935] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:45:51,936] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:45:51,942] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 6 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:46:01,943] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:46:01,944] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:46:01,949] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:46:11,950] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:46:11,950] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:46:11,958] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 8 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:46:21,959] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:46:21,959] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:46:21,963] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:46:31,964] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:46:31,964] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:46:31,969] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:46:41,970] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:46:41,970] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:46:41,974] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:46:51,976] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:46:51,976] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:46:51,984] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 8 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:47:01,986] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:47:01,987] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:47:01,991] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 3 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:47:11,991] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:47:11,991] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:47:11,998] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 7 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:47:22,000] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:47:22,000] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:47:22,006] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 6 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:47:32,008] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:47:32,010] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:47:32,014] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:47:42,015] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:47:42,015] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:47:42,020] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:47:52,021] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:47:52,021] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:47:52,026] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:48:02,027] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:48:02,028] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:48:02,035] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 8 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:48:12,036] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:48:12,036] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:48:12,041] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:48:22,042] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:48:22,042] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:48:22,047] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:48:32,048] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:48:32,048] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:48:32,052] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:48:42,053] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:48:42,053] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:48:42,058] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:48:52,058] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:48:52,059] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:48:52,063] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:49:02,064] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:49:02,065] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:49:02,072] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 7 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:49:12,073] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:49:12,073] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:49:12,077] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:49:22,078] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:49:22,078] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:49:22,082] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:49:32,084] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:49:32,085] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:49:32,090] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:49:42,096] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:49:42,096] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:49:42,102] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 6 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:49:52,104] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:49:52,104] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:49:52,110] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 6 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:50:02,111] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:50:02,111] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:50:02,117] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 6 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:50:12,118] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:50:12,118] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:50:12,123] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:50:22,125] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:50:22,125] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:50:22,129] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:50:32,131] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:50:32,132] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:50:32,136] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:50:42,139] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:50:42,139] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:50:42,144] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:50:52,149] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:50:52,149] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:50:52,153] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:51:02,154] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:51:02,154] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:51:02,159] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:51:12,160] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:51:12,160] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:51:12,164] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:51:22,165] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:51:22,165] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:51:22,169] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:51:32,169] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:51:32,170] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:51:32,173] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 3 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:51:42,175] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:51:42,175] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:51:42,180] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:51:52,181] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:51:52,182] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:51:52,187] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:52:02,188] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:52:02,189] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:52:02,194] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:52:12,195] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:52:12,196] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:52:12,201] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:52:22,204] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:52:22,205] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:52:22,209] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:52:32,211] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:52:32,211] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:52:32,216] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:52:42,217] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:52:42,218] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:52:42,223] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:52:52,224] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:52:52,224] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:52:52,229] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:53:02,229] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:53:02,230] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:53:02,234] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:53:12,235] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:53:12,235] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:53:12,239] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:53:22,240] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:53:22,240] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:53:22,246] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 6 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:53:32,247] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:53:32,247] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:53:32,258] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 11 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:53:42,260] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:53:42,260] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:53:42,267] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 7 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:53:52,269] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:53:52,269] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:53:52,276] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 7 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:54:02,277] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:54:02,277] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:54:02,285] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 8 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:54:12,286] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:54:12,287] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:54:12,290] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 3 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:54:22,291] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:54:22,292] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:54:22,298] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 6 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:54:32,298] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:54:32,299] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:54:32,303] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:54:42,304] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:54:42,304] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:54:42,308] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:54:52,309] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:54:52,310] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:54:52,314] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:55:02,315] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:55:02,315] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:55:02,320] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:55:12,321] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:55:12,321] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:55:12,325] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:55:22,326] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:55:22,326] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:55:22,330] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:55:32,331] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:55:32,331] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:55:32,339] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 8 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:55:42,339] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:55:42,340] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:55:42,344] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:55:52,345] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:55:52,345] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:55:52,349] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:56:02,350] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:56:02,351] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:56:02,355] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:56:12,356] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:56:12,356] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:56:12,367] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 11 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:56:22,367] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:56:22,368] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:56:22,372] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:56:32,373] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:56:32,374] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:56:32,378] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:56:42,379] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:56:42,379] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:56:42,388] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 9 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:56:52,389] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:56:52,389] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:56:52,394] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:57:02,394] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:57:02,395] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:57:02,399] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:57:12,400] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:57:12,400] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:57:12,407] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 7 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:57:22,408] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:57:22,408] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:57:22,413] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:57:32,414] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:57:32,414] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:57:32,421] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 7 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:57:42,422] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:57:42,422] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:57:42,430] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 8 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:57:52,431] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:57:52,431] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:57:52,436] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:58:02,437] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:58:02,437] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:58:02,445] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 8 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:58:12,446] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:58:12,446] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:58:12,452] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 6 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:58:22,453] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:58:22,453] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:58:22,457] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:58:32,458] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:58:32,458] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:58:32,466] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 8 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:58:42,467] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:58:42,467] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:58:42,471] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:58:52,472] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:58:52,472] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:58:52,477] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:59:02,478] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:59:02,478] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:59:02,484] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 6 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:59:12,485] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:59:12,485] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:59:12,490] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:59:22,491] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:59:22,491] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:59:22,497] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 6 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:59:32,500] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:59:32,500] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:59:32,517] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 17 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:59:42,518] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:59:42,518] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:59:42,522] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 4 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)
+[2020-12-10 09:59:52,523] INFO WorkerSourceTask{id=mqtt-source-0} Committing offsets (org.apache.kafka.connect.runtime.WorkerSourceTask:478)
+[2020-12-10 09:59:52,523] INFO WorkerSourceTask{id=mqtt-source-0} flushing 0 outstanding messages for offset commit (org.apache.kafka.connect.runtime.WorkerSourceTask:495)
+[2020-12-10 09:59:52,528] INFO WorkerSourceTask{id=mqtt-source-0} Finished commitOffsets successfully in 5 ms (org.apache.kafka.connect.runtime.WorkerSourceTask:574)

@@ -1,0 +1,1596 @@
+[2020-12-10 08:14:35,376] INFO WorkerInfo values: 
+	jvm.args = -Xms256M, -Xmx2G, -XX:+UseG1GC, -XX:MaxGCPauseMillis=20, -XX:InitiatingHeapOccupancyPercent=35, -XX:+ExplicitGCInvokesConcurrent, -XX:MaxInlineLevel=15, -Djava.awt.headless=true, -Dcom.sun.management.jmxremote, -Dcom.sun.management.jmxremote.authenticate=false, -Dcom.sun.management.jmxremote.ssl=false, -Dkafka.logs.dir=/home/sudhir/confluent-6.0.0/bin/../logs, -Dlog4j.configuration=file:./bin/../etc/kafka/connect-log4j.properties
+	jvm.spec = Debian, OpenJDK 64-Bit Server VM, 11.0.8, 11.0.8+10-post-Debian-1
+	jvm.classpath = /home/sudhir/confluent-6.0.0/share/java/kafka/commons-cli-1.4.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/zookeeper-jute-3.5.8.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/confluent-log4j-1.2.17-cp2.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/scala-reflect-2.13.2.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/netty-resolver-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jakarta.validation-api-2.0.2.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/hk2-utils-2.6.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/javassist-3.26.0-GA.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jakarta.activation-api-1.2.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/metrics-core-2.2.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/paranamer-2.8.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/reflections-0.9.12.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/kafka-streams-scala_2.13-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/zstd-jni-1.4.4-7.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jetty-util-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/connect-transforms-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/lz4-java-1.7.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/kafka-streams-test-utils-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jakarta.ws.rs-api-2.1.6.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jetty-servlet-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/kafka-clients-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jackson-datatype-jdk8-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/snappy-java-1.1.7.3.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/activation-1.1.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/audience-annotations-0.5.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/maven-artifact-3.6.3.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jersey-media-jaxb-2.30.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/netty-buffer-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/kafka_2.13-6.0.0-ccs-test.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jackson-jaxrs-json-provider-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/connect-json-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jetty-client-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/netty-transport-native-unix-common-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/slf4j-log4j12-1.7.30.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/kafka.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/kafka_2.13-6.0.0-ccs-test-sources.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/connect-basic-auth-extension-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jackson-module-paranamer-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/kafka_2.13-6.0.0-ccs-scaladoc.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/commons-lang3-3.8.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/argparse4j-0.7.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jersey-client-2.30.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jersey-container-servlet-core-2.30.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/kafka_2.13-6.0.0-ccs-sources.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/slf4j-api-1.7.30.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/javax.servlet-api-3.1.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jackson-annotations-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/netty-transport-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jackson-jaxrs-base-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/hk2-api-2.6.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/netty-transport-native-epoll-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/kafka-streams-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/kafka_2.13-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/plexus-utils-3.2.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/netty-codec-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/hk2-locator-2.6.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jetty-http-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/kafka-log4j-appender-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jackson-core-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/connect-mirror-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jaxb-api-2.3.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jetty-io-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jetty-servlets-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jetty-server-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/javassist-3.25.0-GA.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/javax.ws.rs-api-2.1.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/scala-java8-compat_2.13-0.9.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/scala-library-2.13.2.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jersey-common-2.30.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/rocksdbjni-5.18.4.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/zookeeper-3.5.8.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jakarta.inject-2.6.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jersey-server-2.30.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/netty-handler-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/kafka_2.13-6.0.0-ccs-javadoc.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/connect-api-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jackson-dataformat-csv-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/scala-logging_2.13-3.9.2.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/netty-common-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/osgi-resource-locator-1.0.3.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jakarta.xml.bind-api-2.3.2.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jopt-simple-5.0.4.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/aopalliance-repackaged-2.6.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/kafka-tools-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/connect-mirror-client-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/kafka-streams-examples-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/connect-file-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jetty-security-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jersey-container-servlet-2.30.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jackson-module-scala_2.13-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jakarta.annotation-api-1.3.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/scala-collection-compat_2.13-2.1.6.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jersey-hk2-2.30.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jetty-continuation-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jackson-databind-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/connect-runtime-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jackson-module-jaxb-annotations-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/confluent-common/common-metrics-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/confluent-common/build-tools-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/confluent-common/slf4j-api-1.7.30.jar:/home/sudhir/confluent-6.0.0/share/java/confluent-common/common-utils-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/confluent-common/common-config-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-connect-avro-data-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/okio-2.5.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-protobuf-provider-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/handy-uri-templates-2.1.8.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/org.everit.json.schema-1.12.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kotlin-script-runtime-1.3.50.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/swagger-annotations-1.6.2.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/animal-sniffer-annotations-1.18.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kotlin-scripting-common-1.3.50.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kotlin-stdlib-jdk8-1.3.71.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/failureaccess-1.0.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/json-20190722.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-protobuf-serializer-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/commons-digester-1.8.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kotlin-scripting-compiler-embeddable-1.3.50.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-streams-protobuf-serde-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/avro-1.9.2.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/protobuf-java-3.11.4.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-json-schema-provider-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/protobuf-java-util-3.11.4.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kotlin-scripting-jvm-1.3.50.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kotlinx-coroutines-core-common-1.1.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/jakarta.ws.rs-api-2.1.6.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/jackson-datatype-jdk8-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/commons-logging-1.2.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/validation-api-2.0.1.Final.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/classgraph-4.8.21.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-connect-json-schema-converter-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/jackson-datatype-jsr310-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-streams-json-schema-serde-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/jsr305-3.0.2.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/jackson-annotations-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/jackson-datatype-guava-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/commons-compress-1.19.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kotlin-reflect-1.3.50.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-streams-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/wire-schema-3.2.2.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-json-schema-serializer-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kotlin-stdlib-jdk7-1.3.71.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/commons-collections-3.2.2.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kotlin-stdlib-1.4.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/jackson-core-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-connect-avro-converter-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kotlinx-coroutines-core-1.1.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/scala-library-2.13.2.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kotlin-scripting-compiler-impl-embeddable-1.3.50.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/jersey-common-2.30.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/mbknor-jackson-jsonschema_2.13-1.0.39.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/error_prone_annotations-2.3.4.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/rocksdbjni-5.18.4.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/guava-28.1-jre.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/re2j-1.3.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/jakarta.inject-2.6.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-json-serializer-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/j2objc-annotations-1.3.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/commons-validator-1.6.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-schema-registry-client-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/jackson-module-parameter-names-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/osgi-resource-locator-1.0.3.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/jackson-datatype-joda-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/joda-time-2.9.9.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/wire-runtime-3.2.2.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-schema-serializer-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kotlin-stdlib-common-1.3.71.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/gson-2.8.6.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-avro-serializer-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-streams-avro-serde-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/checker-qual-2.8.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/jakarta.annotation-api-1.3.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-connect-protobuf-converter-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/annotations-13.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/jackson-databind-2.10.5.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/commons-cli-1.4.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/zookeeper-jute-3.5.8.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/confluent-log4j-1.2.17-cp2.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/scala-reflect-2.13.2.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/netty-resolver-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jakarta.validation-api-2.0.2.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/hk2-utils-2.6.1.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/javassist-3.26.0-GA.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jakarta.activation-api-1.2.1.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/metrics-core-2.2.0.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/paranamer-2.8.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/reflections-0.9.12.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/kafka-streams-scala_2.13-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/zstd-jni-1.4.4-7.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jetty-util-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/connect-transforms-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/lz4-java-1.7.1.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/kafka-streams-test-utils-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jakarta.ws.rs-api-2.1.6.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jetty-servlet-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/kafka-clients-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jackson-datatype-jdk8-2.10.5.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/snappy-java-1.1.7.3.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/activation-1.1.1.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/audience-annotations-0.5.0.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/maven-artifact-3.6.3.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jersey-media-jaxb-2.30.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/netty-buffer-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/kafka_2.13-6.0.0-ccs-test.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jackson-jaxrs-json-provider-2.10.5.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/connect-json-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jetty-client-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/netty-transport-native-unix-common-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/slf4j-log4j12-1.7.30.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/kafka.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/kafka_2.13-6.0.0-ccs-test-sources.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/connect-basic-auth-extension-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jackson-module-paranamer-2.10.5.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/kafka_2.13-6.0.0-ccs-scaladoc.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/commons-lang3-3.8.1.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/argparse4j-0.7.0.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jersey-client-2.30.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jersey-container-servlet-core-2.30.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/kafka_2.13-6.0.0-ccs-sources.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/slf4j-api-1.7.30.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/javax.servlet-api-3.1.0.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jackson-annotations-2.10.5.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/netty-transport-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jackson-jaxrs-base-2.10.5.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/hk2-api-2.6.1.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/netty-transport-native-epoll-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/kafka-streams-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/kafka_2.13-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/plexus-utils-3.2.1.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/netty-codec-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/hk2-locator-2.6.1.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jetty-http-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/kafka-log4j-appender-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jackson-core-2.10.5.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/connect-mirror-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jaxb-api-2.3.0.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jetty-io-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jetty-servlets-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jetty-server-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/javassist-3.25.0-GA.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/javax.ws.rs-api-2.1.1.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/scala-java8-compat_2.13-0.9.1.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/scala-library-2.13.2.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jersey-common-2.30.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/rocksdbjni-5.18.4.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/zookeeper-3.5.8.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jakarta.inject-2.6.1.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jersey-server-2.30.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/netty-handler-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/kafka_2.13-6.0.0-ccs-javadoc.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/connect-api-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jackson-dataformat-csv-2.10.5.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/scala-logging_2.13-3.9.2.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/netty-common-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/osgi-resource-locator-1.0.3.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jakarta.xml.bind-api-2.3.2.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jopt-simple-5.0.4.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/aopalliance-repackaged-2.6.1.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/kafka-tools-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/connect-mirror-client-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/kafka-streams-examples-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/connect-file-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jetty-security-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jersey-container-servlet-2.30.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jackson-module-scala_2.13-2.10.5.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jakarta.annotation-api-1.3.5.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/scala-collection-compat_2.13-2.1.6.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jersey-hk2-2.30.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jetty-continuation-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jackson-databind-2.10.5.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/connect-runtime-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jackson-module-jaxb-annotations-2.10.5.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/confluent-telemetry/*
+	os.spec = Linux, amd64, 5.7.0-kali1-amd64
+	os.vcpus = 2
+ (org.apache.kafka.connect.runtime.WorkerInfo:71)
+[2020-12-10 08:14:35,387] ERROR Stopping due to error (org.apache.kafka.connect.cli.ConnectDistributed:84)
+java.nio.file.NoSuchFileException: config/connect-distributed.properties
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:370)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:421)
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420)
+	at java.base/java.nio.file.Files.newInputStream(Files.java:155)
+	at org.apache.kafka.common.utils.Utils.loadProps(Utils.java:623)
+	at org.apache.kafka.common.utils.Utils.loadProps(Utils.java:610)
+	at org.apache.kafka.connect.cli.ConnectDistributed.main(ConnectDistributed.java:75)
+[2020-12-10 08:24:01,210] INFO WorkerInfo values: 
+	jvm.args = -Xms256M, -Xmx2G, -XX:+UseG1GC, -XX:MaxGCPauseMillis=20, -XX:InitiatingHeapOccupancyPercent=35, -XX:+ExplicitGCInvokesConcurrent, -XX:MaxInlineLevel=15, -Djava.awt.headless=true, -Dcom.sun.management.jmxremote, -Dcom.sun.management.jmxremote.authenticate=false, -Dcom.sun.management.jmxremote.ssl=false, -Dkafka.logs.dir=/home/sudhir/confluent-6.0.0/bin/../logs, -Dlog4j.configuration=file:./bin/../etc/kafka/connect-log4j.properties
+	jvm.spec = Debian, OpenJDK 64-Bit Server VM, 11.0.8, 11.0.8+10-post-Debian-1
+	jvm.classpath = /home/sudhir/confluent-6.0.0/share/java/kafka/commons-cli-1.4.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/zookeeper-jute-3.5.8.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/confluent-log4j-1.2.17-cp2.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/scala-reflect-2.13.2.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/netty-resolver-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jakarta.validation-api-2.0.2.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/hk2-utils-2.6.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/javassist-3.26.0-GA.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jakarta.activation-api-1.2.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/metrics-core-2.2.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/paranamer-2.8.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/reflections-0.9.12.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/kafka-streams-scala_2.13-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/zstd-jni-1.4.4-7.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jetty-util-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/connect-transforms-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/lz4-java-1.7.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/kafka-streams-test-utils-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jakarta.ws.rs-api-2.1.6.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jetty-servlet-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/kafka-clients-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jackson-datatype-jdk8-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/snappy-java-1.1.7.3.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/activation-1.1.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/audience-annotations-0.5.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/maven-artifact-3.6.3.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jersey-media-jaxb-2.30.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/netty-buffer-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/kafka_2.13-6.0.0-ccs-test.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jackson-jaxrs-json-provider-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/connect-json-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jetty-client-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/netty-transport-native-unix-common-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/slf4j-log4j12-1.7.30.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/kafka.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/kafka_2.13-6.0.0-ccs-test-sources.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/connect-basic-auth-extension-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jackson-module-paranamer-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/kafka_2.13-6.0.0-ccs-scaladoc.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/commons-lang3-3.8.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/argparse4j-0.7.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jersey-client-2.30.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jersey-container-servlet-core-2.30.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/kafka_2.13-6.0.0-ccs-sources.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/slf4j-api-1.7.30.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/javax.servlet-api-3.1.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jackson-annotations-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/netty-transport-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jackson-jaxrs-base-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/hk2-api-2.6.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/netty-transport-native-epoll-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/kafka-streams-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/kafka_2.13-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/plexus-utils-3.2.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/netty-codec-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/hk2-locator-2.6.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jetty-http-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/kafka-log4j-appender-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jackson-core-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/connect-mirror-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jaxb-api-2.3.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jetty-io-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jetty-servlets-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jetty-server-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/javassist-3.25.0-GA.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/javax.ws.rs-api-2.1.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/scala-java8-compat_2.13-0.9.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/scala-library-2.13.2.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jersey-common-2.30.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/rocksdbjni-5.18.4.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/zookeeper-3.5.8.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jakarta.inject-2.6.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jersey-server-2.30.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/netty-handler-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/kafka_2.13-6.0.0-ccs-javadoc.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/connect-api-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jackson-dataformat-csv-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/scala-logging_2.13-3.9.2.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/netty-common-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/osgi-resource-locator-1.0.3.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jakarta.xml.bind-api-2.3.2.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jopt-simple-5.0.4.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/aopalliance-repackaged-2.6.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/kafka-tools-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/connect-mirror-client-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/kafka-streams-examples-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/connect-file-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jetty-security-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jersey-container-servlet-2.30.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jackson-module-scala_2.13-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jakarta.annotation-api-1.3.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/scala-collection-compat_2.13-2.1.6.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jersey-hk2-2.30.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jetty-continuation-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jackson-databind-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/connect-runtime-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka/jackson-module-jaxb-annotations-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/confluent-common/common-metrics-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/confluent-common/build-tools-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/confluent-common/slf4j-api-1.7.30.jar:/home/sudhir/confluent-6.0.0/share/java/confluent-common/common-utils-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/confluent-common/common-config-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-connect-avro-data-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/okio-2.5.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-protobuf-provider-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/handy-uri-templates-2.1.8.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/org.everit.json.schema-1.12.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kotlin-script-runtime-1.3.50.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/swagger-annotations-1.6.2.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/animal-sniffer-annotations-1.18.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kotlin-scripting-common-1.3.50.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kotlin-stdlib-jdk8-1.3.71.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/failureaccess-1.0.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/json-20190722.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-protobuf-serializer-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/commons-digester-1.8.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kotlin-scripting-compiler-embeddable-1.3.50.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-streams-protobuf-serde-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/avro-1.9.2.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/protobuf-java-3.11.4.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-json-schema-provider-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/protobuf-java-util-3.11.4.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kotlin-scripting-jvm-1.3.50.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kotlinx-coroutines-core-common-1.1.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/jakarta.ws.rs-api-2.1.6.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/jackson-datatype-jdk8-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/commons-logging-1.2.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/validation-api-2.0.1.Final.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/classgraph-4.8.21.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-connect-json-schema-converter-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/jackson-datatype-jsr310-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-streams-json-schema-serde-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/jsr305-3.0.2.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/jackson-annotations-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/jackson-datatype-guava-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/commons-compress-1.19.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kotlin-reflect-1.3.50.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-streams-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/wire-schema-3.2.2.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-json-schema-serializer-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kotlin-stdlib-jdk7-1.3.71.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/commons-collections-3.2.2.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kotlin-stdlib-1.4.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/jackson-core-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-connect-avro-converter-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kotlinx-coroutines-core-1.1.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/scala-library-2.13.2.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kotlin-scripting-compiler-impl-embeddable-1.3.50.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/jersey-common-2.30.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/mbknor-jackson-jsonschema_2.13-1.0.39.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/error_prone_annotations-2.3.4.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/rocksdbjni-5.18.4.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/guava-28.1-jre.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/re2j-1.3.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/jakarta.inject-2.6.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-json-serializer-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/j2objc-annotations-1.3.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/commons-validator-1.6.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-schema-registry-client-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/jackson-module-parameter-names-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/osgi-resource-locator-1.0.3.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/jackson-datatype-joda-2.10.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/joda-time-2.9.9.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/wire-runtime-3.2.2.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-schema-serializer-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kotlin-stdlib-common-1.3.71.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/gson-2.8.6.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-avro-serializer-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-streams-avro-serde-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/checker-qual-2.8.1.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/jakarta.annotation-api-1.3.5.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/kafka-connect-protobuf-converter-6.0.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/annotations-13.0.jar:/home/sudhir/confluent-6.0.0/share/java/kafka-serde-tools/jackson-databind-2.10.5.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/commons-cli-1.4.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/zookeeper-jute-3.5.8.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/confluent-log4j-1.2.17-cp2.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/scala-reflect-2.13.2.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/netty-resolver-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jakarta.validation-api-2.0.2.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/hk2-utils-2.6.1.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/javassist-3.26.0-GA.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jakarta.activation-api-1.2.1.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/metrics-core-2.2.0.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/paranamer-2.8.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/reflections-0.9.12.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/kafka-streams-scala_2.13-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/zstd-jni-1.4.4-7.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jetty-util-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/connect-transforms-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/lz4-java-1.7.1.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/kafka-streams-test-utils-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jakarta.ws.rs-api-2.1.6.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jetty-servlet-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/kafka-clients-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jackson-datatype-jdk8-2.10.5.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/snappy-java-1.1.7.3.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/activation-1.1.1.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/audience-annotations-0.5.0.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/maven-artifact-3.6.3.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jersey-media-jaxb-2.30.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/netty-buffer-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/kafka_2.13-6.0.0-ccs-test.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jackson-jaxrs-json-provider-2.10.5.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/connect-json-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jetty-client-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/netty-transport-native-unix-common-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/slf4j-log4j12-1.7.30.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/kafka.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/kafka_2.13-6.0.0-ccs-test-sources.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/connect-basic-auth-extension-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jackson-module-paranamer-2.10.5.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/kafka_2.13-6.0.0-ccs-scaladoc.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/commons-lang3-3.8.1.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/argparse4j-0.7.0.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jersey-client-2.30.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jersey-container-servlet-core-2.30.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/kafka_2.13-6.0.0-ccs-sources.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/slf4j-api-1.7.30.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/javax.servlet-api-3.1.0.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jackson-annotations-2.10.5.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/netty-transport-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jackson-jaxrs-base-2.10.5.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/hk2-api-2.6.1.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/netty-transport-native-epoll-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/kafka-streams-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/kafka_2.13-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/plexus-utils-3.2.1.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/netty-codec-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/hk2-locator-2.6.1.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jetty-http-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/kafka-log4j-appender-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jackson-core-2.10.5.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/connect-mirror-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jaxb-api-2.3.0.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jetty-io-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jetty-servlets-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jetty-server-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/javassist-3.25.0-GA.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/javax.ws.rs-api-2.1.1.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/scala-java8-compat_2.13-0.9.1.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/scala-library-2.13.2.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jersey-common-2.30.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/rocksdbjni-5.18.4.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/zookeeper-3.5.8.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jakarta.inject-2.6.1.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jersey-server-2.30.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/netty-handler-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/kafka_2.13-6.0.0-ccs-javadoc.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/connect-api-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jackson-dataformat-csv-2.10.5.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/scala-logging_2.13-3.9.2.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/netty-common-4.1.50.Final.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/osgi-resource-locator-1.0.3.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jakarta.xml.bind-api-2.3.2.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jopt-simple-5.0.4.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/aopalliance-repackaged-2.6.1.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/kafka-tools-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/connect-mirror-client-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/kafka-streams-examples-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/connect-file-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jetty-security-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jersey-container-servlet-2.30.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jackson-module-scala_2.13-2.10.5.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jakarta.annotation-api-1.3.5.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/scala-collection-compat_2.13-2.1.6.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jersey-hk2-2.30.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jetty-continuation-9.4.24.v20191120.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jackson-databind-2.10.5.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/connect-runtime-6.0.0-ccs.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/kafka/jackson-module-jaxb-annotations-2.10.5.jar:/home/sudhir/confluent-6.0.0/bin/../share/java/confluent-telemetry/*
+	os.spec = Linux, amd64, 5.7.0-kali1-amd64
+	os.vcpus = 2
+ (org.apache.kafka.connect.runtime.WorkerInfo:71)
+[2020-12-10 08:24:01,229] INFO Scanning for plugin classes. This might take a moment ... (org.apache.kafka.connect.cli.ConnectDistributed:90)
+[2020-12-10 08:24:01,316] INFO Loading plugin from: /usr/share/java/javatools.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:246)
+[2020-12-10 08:24:01,534] INFO Registered loader: PluginClassLoader{pluginLocation=file:/usr/share/java/javatools.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:269)
+[2020-12-10 08:24:01,535] INFO Added plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:01,536] INFO Added plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:01,536] INFO Added plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:01,540] INFO Loading plugin from: /usr/share/java/libintl.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:246)
+[2020-12-10 08:24:01,567] INFO Registered loader: PluginClassLoader{pluginLocation=file:/usr/share/java/libintl.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:269)
+[2020-12-10 08:24:01,568] INFO Loading plugin from: /usr/share/java/confluentinc-kafka-connect-mqtt-1.4.0 (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:246)
+[2020-12-10 08:24:03,068] INFO Registered loader: PluginClassLoader{pluginLocation=file:/usr/share/java/confluentinc-kafka-connect-mqtt-1.4.0/} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:269)
+[2020-12-10 08:24:03,068] INFO Added plugin 'io.confluent.connect.mqtt.MqttSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:03,069] INFO Added plugin 'io.confluent.connect.mqtt.MqttSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:03,071] INFO Loading plugin from: /usr/share/java/java-atk-wrapper.jar (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:246)
+[2020-12-10 08:24:03,108] INFO Registered loader: PluginClassLoader{pluginLocation=file:/usr/share/java/java-atk-wrapper.jar} (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:269)
+[2020-12-10 08:24:09,421] INFO Registered loader: jdk.internal.loader.ClassLoaders$AppClassLoader@75b84c92 (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:269)
+[2020-12-10 08:24:09,426] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,426] INFO Added plugin 'org.apache.kafka.connect.file.FileStreamSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,427] INFO Added plugin 'org.apache.kafka.connect.file.FileStreamSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,427] INFO Added plugin 'org.apache.kafka.connect.tools.MockSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,428] INFO Added plugin 'org.apache.kafka.connect.tools.SchemaSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,429] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,429] INFO Added plugin 'org.apache.kafka.connect.tools.VerifiableSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,430] INFO Added plugin 'org.apache.kafka.connect.tools.VerifiableSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,430] INFO Added plugin 'org.apache.kafka.connect.tools.MockSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,431] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,431] INFO Added plugin 'org.apache.kafka.connect.tools.MockConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,432] INFO Added plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,432] INFO Added plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,432] INFO Added plugin 'org.apache.kafka.connect.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,433] INFO Added plugin 'io.confluent.connect.avro.AvroConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,433] INFO Added plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,434] INFO Added plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,434] INFO Added plugin 'io.confluent.connect.json.JsonSchemaConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,435] INFO Added plugin 'io.confluent.connect.protobuf.ProtobufConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,435] INFO Added plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,436] INFO Added plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,436] INFO Added plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,437] INFO Added plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,437] INFO Added plugin 'org.apache.kafka.connect.transforms.ReplaceField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,438] INFO Added plugin 'org.apache.kafka.connect.transforms.SetSchemaMetadata$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,438] INFO Added plugin 'org.apache.kafka.connect.transforms.ReplaceField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,438] INFO Added plugin 'org.apache.kafka.connect.transforms.Filter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,439] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,439] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampConverter$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,439] INFO Added plugin 'org.apache.kafka.connect.transforms.MaskField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,440] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,440] INFO Added plugin 'org.apache.kafka.connect.transforms.RegexRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,441] INFO Added plugin 'org.apache.kafka.connect.transforms.HoistField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,441] INFO Added plugin 'org.apache.kafka.connect.transforms.ValueToKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,441] INFO Added plugin 'org.apache.kafka.connect.transforms.MaskField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,442] INFO Added plugin 'org.apache.kafka.connect.transforms.Cast$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,442] INFO Added plugin 'org.apache.kafka.connect.transforms.Cast$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,442] INFO Added plugin 'org.apache.kafka.connect.runtime.PredicatedTransformation' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,443] INFO Added plugin 'org.apache.kafka.connect.transforms.ExtractField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,443] INFO Added plugin 'org.apache.kafka.connect.transforms.Flatten$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,443] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,444] INFO Added plugin 'org.apache.kafka.connect.transforms.Flatten$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,444] INFO Added plugin 'org.apache.kafka.connect.transforms.SetSchemaMetadata$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,444] INFO Added plugin 'org.apache.kafka.connect.transforms.ExtractField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,445] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampConverter$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,445] INFO Added plugin 'org.apache.kafka.connect.transforms.HoistField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,446] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.HasHeaderKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,446] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.RecordIsTombstone' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,447] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.TopicNameMatches' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,447] INFO Added plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,448] INFO Added plugin 'org.apache.kafka.connect.rest.basic.auth.extension.BasicAuthSecurityRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:198)
+[2020-12-10 08:24:09,449] INFO Added aliases 'MqttSinkConnector' and 'MqttSink' to plugin 'io.confluent.connect.mqtt.MqttSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,449] INFO Added aliases 'MqttSourceConnector' and 'MqttSource' to plugin 'io.confluent.connect.mqtt.MqttSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,450] INFO Added aliases 'FileStreamSinkConnector' and 'FileStreamSink' to plugin 'org.apache.kafka.connect.file.FileStreamSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,450] INFO Added aliases 'FileStreamSourceConnector' and 'FileStreamSource' to plugin 'org.apache.kafka.connect.file.FileStreamSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,450] INFO Added aliases 'MirrorCheckpointConnector' and 'MirrorCheckpoint' to plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,451] INFO Added aliases 'MirrorHeartbeatConnector' and 'MirrorHeartbeat' to plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,451] INFO Added aliases 'MirrorSourceConnector' and 'MirrorSource' to plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,451] INFO Added aliases 'MockConnector' and 'Mock' to plugin 'org.apache.kafka.connect.tools.MockConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,451] INFO Added aliases 'MockSinkConnector' and 'MockSink' to plugin 'org.apache.kafka.connect.tools.MockSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,452] INFO Added aliases 'MockSourceConnector' and 'MockSource' to plugin 'org.apache.kafka.connect.tools.MockSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,452] INFO Added aliases 'SchemaSourceConnector' and 'SchemaSource' to plugin 'org.apache.kafka.connect.tools.SchemaSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,452] INFO Added aliases 'VerifiableSinkConnector' and 'VerifiableSink' to plugin 'org.apache.kafka.connect.tools.VerifiableSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,452] INFO Added aliases 'VerifiableSourceConnector' and 'VerifiableSource' to plugin 'org.apache.kafka.connect.tools.VerifiableSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,453] INFO Added aliases 'AvroConverter' and 'Avro' to plugin 'io.confluent.connect.avro.AvroConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,453] INFO Added aliases 'JsonSchemaConverter' and 'JsonSchema' to plugin 'io.confluent.connect.json.JsonSchemaConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,453] INFO Added aliases 'ProtobufConverter' and 'Protobuf' to plugin 'io.confluent.connect.protobuf.ProtobufConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,454] INFO Added aliases 'ByteArrayConverter' and 'ByteArray' to plugin 'org.apache.kafka.connect.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,454] INFO Added aliases 'DoubleConverter' and 'Double' to plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,454] INFO Added aliases 'FloatConverter' and 'Float' to plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,454] INFO Added aliases 'IntegerConverter' and 'Integer' to plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,455] INFO Added aliases 'LongConverter' and 'Long' to plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,455] INFO Added aliases 'ShortConverter' and 'Short' to plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,455] INFO Added aliases 'JsonConverter' and 'Json' to plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,455] INFO Added aliases 'StringConverter' and 'String' to plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,456] INFO Added aliases 'ByteArrayConverter' and 'ByteArray' to plugin 'org.apache.kafka.connect.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,456] INFO Added aliases 'DoubleConverter' and 'Double' to plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,456] INFO Added aliases 'FloatConverter' and 'Float' to plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,456] INFO Added aliases 'IntegerConverter' and 'Integer' to plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,456] INFO Added aliases 'LongConverter' and 'Long' to plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,457] INFO Added aliases 'ShortConverter' and 'Short' to plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,457] INFO Added aliases 'JsonConverter' and 'Json' to plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,457] INFO Added alias 'SimpleHeaderConverter' to plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:427)
+[2020-12-10 08:24:09,457] INFO Added aliases 'StringConverter' and 'String' to plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,458] INFO Added aliases 'PredicatedTransformation' and 'Predicated' to plugin 'org.apache.kafka.connect.runtime.PredicatedTransformation' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,458] INFO Added alias 'Filter' to plugin 'org.apache.kafka.connect.transforms.Filter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:427)
+[2020-12-10 08:24:09,459] INFO Added alias 'RegexRouter' to plugin 'org.apache.kafka.connect.transforms.RegexRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:427)
+[2020-12-10 08:24:09,459] INFO Added alias 'TimestampRouter' to plugin 'org.apache.kafka.connect.transforms.TimestampRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:427)
+[2020-12-10 08:24:09,459] INFO Added alias 'ValueToKey' to plugin 'org.apache.kafka.connect.transforms.ValueToKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:427)
+[2020-12-10 08:24:09,459] INFO Added alias 'HasHeaderKey' to plugin 'org.apache.kafka.connect.transforms.predicates.HasHeaderKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:427)
+[2020-12-10 08:24:09,459] INFO Added alias 'RecordIsTombstone' to plugin 'org.apache.kafka.connect.transforms.predicates.RecordIsTombstone' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:427)
+[2020-12-10 08:24:09,460] INFO Added alias 'TopicNameMatches' to plugin 'org.apache.kafka.connect.transforms.predicates.TopicNameMatches' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:427)
+[2020-12-10 08:24:09,460] INFO Added alias 'BasicAuthSecurityRestExtension' to plugin 'org.apache.kafka.connect.rest.basic.auth.extension.BasicAuthSecurityRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:427)
+[2020-12-10 08:24:09,460] INFO Added aliases 'AllConnectorClientConfigOverridePolicy' and 'All' to plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,460] INFO Added aliases 'NoneConnectorClientConfigOverridePolicy' and 'None' to plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,461] INFO Added aliases 'PrincipalConnectorClientConfigOverridePolicy' and 'Principal' to plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:430)
+[2020-12-10 08:24:09,607] INFO DistributedConfig values: 
+	access.control.allow.methods = 
+	access.control.allow.origin = 
+	admin.listeners = null
+	bootstrap.servers = [localhost:9090, localhost:9092, localhost:9093, localhost:9094]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	config.providers = []
+	config.storage.replication.factor = 3
+	config.storage.topic = connect-configs
+	connect.protocol = sessioned
+	connections.max.idle.ms = 540000
+	connector.client.config.override.policy = None
+	group.id = connect-cluster
+	header.converter = class org.apache.kafka.connect.storage.SimpleHeaderConverter
+	heartbeat.interval.ms = 3000
+	inter.worker.key.generation.algorithm = HmacSHA256
+	inter.worker.key.size = null
+	inter.worker.key.ttl.ms = 3600000
+	inter.worker.signature.algorithm = HmacSHA256
+	inter.worker.verification.algorithms = [HmacSHA256]
+	internal.key.converter = class org.apache.kafka.connect.json.JsonConverter
+	internal.value.converter = class org.apache.kafka.connect.json.JsonConverter
+	key.converter = class org.apache.kafka.connect.storage.StringConverter
+	listeners = null
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	offset.flush.interval.ms = 10000
+	offset.flush.timeout.ms = 5000
+	offset.storage.partitions = 25
+	offset.storage.replication.factor = 3
+	offset.storage.topic = connect-offsets
+	plugin.path = [/usr/share/java]
+	rebalance.timeout.ms = 60000
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 40000
+	response.http.headers.config = 
+	rest.advertised.host.name = null
+	rest.advertised.listener = null
+	rest.advertised.port = null
+	rest.extension.classes = []
+	rest.host.name = null
+	rest.port = 8083
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	scheduled.rebalance.max.delay.ms = 300000
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	status.storage.partitions = 5
+	status.storage.replication.factor = 3
+	status.storage.topic = connect-status
+	task.shutdown.graceful.timeout.ms = 5000
+	topic.creation.enable = true
+	topic.tracking.allow.reset = true
+	topic.tracking.enable = true
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+	worker.sync.timeout.ms = 3000
+	worker.unsync.backoff.ms = 300000
+ (org.apache.kafka.connect.runtime.distributed.DistributedConfig:354)
+[2020-12-10 08:24:09,615] INFO Creating Kafka admin client (org.apache.kafka.connect.util.ConnectUtils:49)
+[2020-12-10 08:24:09,618] INFO AdminClientConfig values: 
+	bootstrap.servers = [localhost:9090, localhost:9092, localhost:9093, localhost:9094]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:354)
+[2020-12-10 08:24:09,739] WARN The configuration 'config.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:09,740] WARN The configuration 'status.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:09,740] WARN The configuration 'group.id' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:09,740] WARN The configuration 'plugin.path' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:09,741] WARN The configuration 'config.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:09,741] WARN The configuration 'offset.flush.interval.ms' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:09,741] WARN The configuration 'key.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:09,742] WARN The configuration 'status.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:09,742] WARN The configuration 'value.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:09,742] WARN The configuration 'offset.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:09,743] WARN The configuration 'offset.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:09,743] WARN The configuration 'value.converter' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:09,743] WARN The configuration 'key.converter' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:09,744] INFO Kafka version: 6.0.0-ccs (org.apache.kafka.common.utils.AppInfoParser:117)
+[2020-12-10 08:24:09,744] INFO Kafka commitId: 17b744c31e00868b (org.apache.kafka.common.utils.AppInfoParser:118)
+[2020-12-10 08:24:09,744] INFO Kafka startTimeMs: 1607606649743 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2020-12-10 08:24:10,351] INFO Kafka cluster ID: k63hXRb0SeW0on3FPsxu1w (org.apache.kafka.connect.util.ConnectUtils:65)
+[2020-12-10 08:24:10,387] INFO Logging initialized @10286ms to org.eclipse.jetty.util.log.Slf4jLog (org.eclipse.jetty.util.log:169)
+[2020-12-10 08:24:10,476] INFO Added connector for http://:8083 (org.apache.kafka.connect.runtime.rest.RestServer:132)
+[2020-12-10 08:24:10,476] INFO Initializing REST server (org.apache.kafka.connect.runtime.rest.RestServer:204)
+[2020-12-10 08:24:10,488] INFO jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 11.0.8+10-post-Debian-1 (org.eclipse.jetty.server.Server:359)
+[2020-12-10 08:24:10,552] INFO Started http_8083@2bf94401{HTTP/1.1,[http/1.1]}{0.0.0.0:8083} (org.eclipse.jetty.server.AbstractConnector:330)
+[2020-12-10 08:24:10,553] INFO Started @10452ms (org.eclipse.jetty.server.Server:399)
+[2020-12-10 08:24:10,603] INFO Advertised URI: http://127.0.1.1:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:371)
+[2020-12-10 08:24:10,603] INFO REST server listening at http://127.0.1.1:8083/, advertising URL http://127.0.1.1:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:219)
+[2020-12-10 08:24:10,605] INFO Advertised URI: http://127.0.1.1:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:371)
+[2020-12-10 08:24:10,605] INFO REST admin endpoints at http://127.0.1.1:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:220)
+[2020-12-10 08:24:10,607] INFO Advertised URI: http://127.0.1.1:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:371)
+[2020-12-10 08:24:10,610] INFO Creating Kafka admin client (org.apache.kafka.connect.util.ConnectUtils:49)
+[2020-12-10 08:24:10,611] INFO AdminClientConfig values: 
+	bootstrap.servers = [localhost:9090, localhost:9092, localhost:9093, localhost:9094]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:354)
+[2020-12-10 08:24:10,624] WARN The configuration 'config.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:10,624] WARN The configuration 'status.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:10,624] WARN The configuration 'group.id' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:10,624] WARN The configuration 'plugin.path' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:10,625] WARN The configuration 'config.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:10,625] WARN The configuration 'offset.flush.interval.ms' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:10,625] WARN The configuration 'key.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:10,625] WARN The configuration 'status.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:10,625] WARN The configuration 'value.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:10,625] WARN The configuration 'offset.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:10,625] WARN The configuration 'offset.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:10,625] WARN The configuration 'value.converter' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:10,625] WARN The configuration 'key.converter' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:10,626] INFO Kafka version: 6.0.0-ccs (org.apache.kafka.common.utils.AppInfoParser:117)
+[2020-12-10 08:24:10,626] INFO Kafka commitId: 17b744c31e00868b (org.apache.kafka.common.utils.AppInfoParser:118)
+[2020-12-10 08:24:10,626] INFO Kafka startTimeMs: 1607606650626 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2020-12-10 08:24:10,665] INFO Kafka cluster ID: k63hXRb0SeW0on3FPsxu1w (org.apache.kafka.connect.util.ConnectUtils:65)
+[2020-12-10 08:24:10,698] INFO Setting up None Policy for ConnectorClientConfigOverride. This will disallow any client configuration to be overridden (org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy:45)
+[2020-12-10 08:24:10,720] INFO Creating Kafka admin client (org.apache.kafka.connect.util.ConnectUtils:49)
+[2020-12-10 08:24:10,721] INFO AdminClientConfig values: 
+	bootstrap.servers = [localhost:9090, localhost:9092, localhost:9093, localhost:9094]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:354)
+[2020-12-10 08:24:10,739] WARN The configuration 'config.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:10,740] WARN The configuration 'status.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:10,740] WARN The configuration 'group.id' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:10,741] WARN The configuration 'plugin.path' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:10,741] WARN The configuration 'config.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:10,741] WARN The configuration 'offset.flush.interval.ms' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:10,741] WARN The configuration 'key.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:10,741] WARN The configuration 'status.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:10,743] WARN The configuration 'value.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:10,743] WARN The configuration 'offset.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:10,743] WARN The configuration 'offset.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:10,743] WARN The configuration 'value.converter' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:10,744] WARN The configuration 'key.converter' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:10,744] INFO Kafka version: 6.0.0-ccs (org.apache.kafka.common.utils.AppInfoParser:117)
+[2020-12-10 08:24:10,744] INFO Kafka commitId: 17b744c31e00868b (org.apache.kafka.common.utils.AppInfoParser:118)
+[2020-12-10 08:24:10,744] INFO Kafka startTimeMs: 1607606650744 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2020-12-10 08:24:10,799] INFO Kafka cluster ID: k63hXRb0SeW0on3FPsxu1w (org.apache.kafka.connect.util.ConnectUtils:65)
+[2020-12-10 08:24:10,814] INFO Kafka version: 6.0.0-ccs (org.apache.kafka.common.utils.AppInfoParser:117)
+[2020-12-10 08:24:10,814] INFO Kafka commitId: 17b744c31e00868b (org.apache.kafka.common.utils.AppInfoParser:118)
+[2020-12-10 08:24:10,814] INFO Kafka startTimeMs: 1607606650814 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2020-12-10 08:24:11,063] INFO JsonConverterConfig values: 
+	converter.type = key
+	decimal.format = BASE64
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:354)
+[2020-12-10 08:24:11,066] INFO JsonConverterConfig values: 
+	converter.type = value
+	decimal.format = BASE64
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:354)
+[2020-12-10 08:24:11,066] INFO Creating Kafka admin client (org.apache.kafka.connect.util.ConnectUtils:49)
+[2020-12-10 08:24:11,068] INFO AdminClientConfig values: 
+	bootstrap.servers = [localhost:9090, localhost:9092, localhost:9093, localhost:9094]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:354)
+[2020-12-10 08:24:11,073] WARN The configuration 'config.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,073] WARN The configuration 'status.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,073] WARN The configuration 'group.id' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,073] WARN The configuration 'plugin.path' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,073] WARN The configuration 'config.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,074] WARN The configuration 'offset.flush.interval.ms' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,074] WARN The configuration 'key.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,074] WARN The configuration 'status.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,078] WARN The configuration 'value.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,078] WARN The configuration 'offset.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,079] WARN The configuration 'offset.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,079] WARN The configuration 'value.converter' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,079] WARN The configuration 'key.converter' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,080] INFO Kafka version: 6.0.0-ccs (org.apache.kafka.common.utils.AppInfoParser:117)
+[2020-12-10 08:24:11,080] INFO Kafka commitId: 17b744c31e00868b (org.apache.kafka.common.utils.AppInfoParser:118)
+[2020-12-10 08:24:11,080] INFO Kafka startTimeMs: 1607606651080 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2020-12-10 08:24:11,123] INFO Kafka cluster ID: k63hXRb0SeW0on3FPsxu1w (org.apache.kafka.connect.util.ConnectUtils:65)
+[2020-12-10 08:24:11,147] INFO Creating Kafka admin client (org.apache.kafka.connect.util.ConnectUtils:49)
+[2020-12-10 08:24:11,148] INFO AdminClientConfig values: 
+	bootstrap.servers = [localhost:9090, localhost:9092, localhost:9093, localhost:9094]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:354)
+[2020-12-10 08:24:11,159] WARN The configuration 'config.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,159] WARN The configuration 'status.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,159] WARN The configuration 'group.id' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,159] WARN The configuration 'plugin.path' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,160] WARN The configuration 'config.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,160] WARN The configuration 'offset.flush.interval.ms' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,160] WARN The configuration 'key.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,161] WARN The configuration 'status.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,161] WARN The configuration 'value.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,161] WARN The configuration 'offset.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,161] WARN The configuration 'offset.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,161] WARN The configuration 'value.converter' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,161] WARN The configuration 'key.converter' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,161] INFO Kafka version: 6.0.0-ccs (org.apache.kafka.common.utils.AppInfoParser:117)
+[2020-12-10 08:24:11,161] INFO Kafka commitId: 17b744c31e00868b (org.apache.kafka.common.utils.AppInfoParser:118)
+[2020-12-10 08:24:11,161] INFO Kafka startTimeMs: 1607606651161 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2020-12-10 08:24:11,202] INFO Kafka cluster ID: k63hXRb0SeW0on3FPsxu1w (org.apache.kafka.connect.util.ConnectUtils:65)
+[2020-12-10 08:24:11,221] INFO Creating Kafka admin client (org.apache.kafka.connect.util.ConnectUtils:49)
+[2020-12-10 08:24:11,221] INFO AdminClientConfig values: 
+	bootstrap.servers = [localhost:9090, localhost:9092, localhost:9093, localhost:9094]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:354)
+[2020-12-10 08:24:11,227] WARN The configuration 'config.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,228] WARN The configuration 'status.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,228] WARN The configuration 'group.id' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,228] WARN The configuration 'plugin.path' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,228] WARN The configuration 'config.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,228] WARN The configuration 'offset.flush.interval.ms' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,230] WARN The configuration 'key.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,230] WARN The configuration 'status.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,230] WARN The configuration 'value.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,230] WARN The configuration 'offset.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,230] WARN The configuration 'offset.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,230] WARN The configuration 'value.converter' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,230] WARN The configuration 'key.converter' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,230] INFO Kafka version: 6.0.0-ccs (org.apache.kafka.common.utils.AppInfoParser:117)
+[2020-12-10 08:24:11,231] INFO Kafka commitId: 17b744c31e00868b (org.apache.kafka.common.utils.AppInfoParser:118)
+[2020-12-10 08:24:11,231] INFO Kafka startTimeMs: 1607606651230 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2020-12-10 08:24:11,256] INFO Kafka cluster ID: k63hXRb0SeW0on3FPsxu1w (org.apache.kafka.connect.util.ConnectUtils:65)
+[2020-12-10 08:24:11,277] INFO Creating Kafka admin client (org.apache.kafka.connect.util.ConnectUtils:49)
+[2020-12-10 08:24:11,281] INFO AdminClientConfig values: 
+	bootstrap.servers = [localhost:9090, localhost:9092, localhost:9093, localhost:9094]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:354)
+[2020-12-10 08:24:11,284] WARN The configuration 'config.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,284] WARN The configuration 'status.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,284] WARN The configuration 'group.id' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,284] WARN The configuration 'plugin.path' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,285] WARN The configuration 'config.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,285] WARN The configuration 'offset.flush.interval.ms' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,285] WARN The configuration 'key.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,285] WARN The configuration 'status.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,287] WARN The configuration 'value.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,288] WARN The configuration 'offset.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,294] WARN The configuration 'offset.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,295] WARN The configuration 'value.converter' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,295] WARN The configuration 'key.converter' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,295] INFO Kafka version: 6.0.0-ccs (org.apache.kafka.common.utils.AppInfoParser:117)
+[2020-12-10 08:24:11,295] INFO Kafka commitId: 17b744c31e00868b (org.apache.kafka.common.utils.AppInfoParser:118)
+[2020-12-10 08:24:11,298] INFO Kafka startTimeMs: 1607606651295 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2020-12-10 08:24:11,334] INFO Kafka cluster ID: k63hXRb0SeW0on3FPsxu1w (org.apache.kafka.connect.util.ConnectUtils:65)
+[2020-12-10 08:24:11,376] INFO Kafka version: 6.0.0-ccs (org.apache.kafka.common.utils.AppInfoParser:117)
+[2020-12-10 08:24:11,376] INFO Kafka commitId: 17b744c31e00868b (org.apache.kafka.common.utils.AppInfoParser:118)
+[2020-12-10 08:24:11,376] INFO Kafka startTimeMs: 1607606651372 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2020-12-10 08:24:11,382] INFO Kafka Connect distributed worker initialization took 10153ms (org.apache.kafka.connect.cli.ConnectDistributed:128)
+[2020-12-10 08:24:11,383] INFO Kafka Connect starting (org.apache.kafka.connect.runtime.Connect:51)
+[2020-12-10 08:24:11,386] INFO Initializing REST resources (org.apache.kafka.connect.runtime.rest.RestServer:224)
+[2020-12-10 08:24:11,395] INFO [Worker clientId=connect-1, groupId=connect-cluster] Herder starting (org.apache.kafka.connect.runtime.distributed.DistributedHerder:286)
+[2020-12-10 08:24:11,404] INFO Worker starting (org.apache.kafka.connect.runtime.Worker:195)
+[2020-12-10 08:24:11,404] INFO Starting KafkaOffsetBackingStore (org.apache.kafka.connect.storage.KafkaOffsetBackingStore:127)
+[2020-12-10 08:24:11,408] INFO Starting KafkaBasedLog with topic connect-offsets (org.apache.kafka.connect.util.KafkaBasedLog:127)
+[2020-12-10 08:24:11,409] INFO AdminClientConfig values: 
+	bootstrap.servers = [localhost:9090, localhost:9092, localhost:9093, localhost:9094]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:354)
+[2020-12-10 08:24:11,416] WARN The configuration 'config.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,419] WARN The configuration 'metrics.context.connect.group.id' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,419] WARN The configuration 'status.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,419] WARN The configuration 'group.id' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,420] WARN The configuration 'plugin.path' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,420] WARN The configuration 'config.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,420] WARN The configuration 'offset.flush.interval.ms' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,425] WARN The configuration 'key.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,425] WARN The configuration 'metrics.context.connect.kafka.cluster.id' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,425] WARN The configuration 'status.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,427] WARN The configuration 'value.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,427] WARN The configuration 'offset.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,428] WARN The configuration 'offset.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,429] WARN The configuration 'value.converter' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,429] WARN The configuration 'key.converter' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:11,430] INFO Kafka version: 6.0.0-ccs (org.apache.kafka.common.utils.AppInfoParser:117)
+[2020-12-10 08:24:11,431] INFO Kafka commitId: 17b744c31e00868b (org.apache.kafka.common.utils.AppInfoParser:118)
+[2020-12-10 08:24:11,431] INFO Kafka startTimeMs: 1607606651430 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2020-12-10 08:24:11,567] INFO Adding admin resources to main listener (org.apache.kafka.connect.runtime.rest.RestServer:241)
+[2020-12-10 08:24:11,991] INFO DefaultSessionIdManager workerName=node0 (org.eclipse.jetty.server.session:333)
+[2020-12-10 08:24:12,015] INFO No SessionScavenger set, using defaults (org.eclipse.jetty.server.session:338)
+[2020-12-10 08:24:12,016] INFO node0 Scavenging every 660000ms (org.eclipse.jetty.server.session:140)
+[2020-12-10 08:24:12,795] INFO Created topic (name=connect-offsets, numPartitions=25, replicationFactor=3, replicasAssignments=null, configs={cleanup.policy=compact}) on brokers at localhost:9090,localhost:9092,localhost:9093,localhost:9094 (org.apache.kafka.connect.util.TopicAdmin:284)
+[2020-12-10 08:24:12,850] INFO ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9090, localhost:9092, localhost:9093, localhost:9094]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 2147483647
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 1
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+ (org.apache.kafka.clients.producer.ProducerConfig:354)
+[2020-12-10 08:24:12,965] WARN The configuration 'config.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:12,965] WARN The configuration 'metrics.context.connect.group.id' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:12,965] WARN The configuration 'status.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:12,965] WARN The configuration 'group.id' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:12,965] WARN The configuration 'plugin.path' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:12,965] WARN The configuration 'config.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:12,966] WARN The configuration 'offset.flush.interval.ms' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:12,966] WARN The configuration 'key.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:12,966] WARN The configuration 'metrics.context.connect.kafka.cluster.id' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:12,966] WARN The configuration 'status.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:12,966] WARN The configuration 'value.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:12,966] WARN The configuration 'offset.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:12,966] WARN The configuration 'offset.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:12,966] WARN The configuration 'value.converter' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:12,966] WARN The configuration 'key.converter' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:12,967] INFO Kafka version: 6.0.0-ccs (org.apache.kafka.common.utils.AppInfoParser:117)
+[2020-12-10 08:24:12,968] INFO Kafka commitId: 17b744c31e00868b (org.apache.kafka.common.utils.AppInfoParser:118)
+[2020-12-10 08:24:12,968] INFO Kafka startTimeMs: 1607606652966 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2020-12-10 08:24:13,003] INFO ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9090, localhost:9092, localhost:9093, localhost:9094]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-connect-cluster-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = connect-cluster
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+ (org.apache.kafka.clients.consumer.ConsumerConfig:354)
+[2020-12-10 08:24:13,013] INFO [Producer clientId=producer-1] Cluster ID: k63hXRb0SeW0on3FPsxu1w (org.apache.kafka.clients.Metadata:279)
+[2020-12-10 08:24:13,203] WARN The configuration 'config.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:13,235] WARN The configuration 'metrics.context.connect.group.id' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:13,236] WARN The configuration 'status.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:13,236] WARN The configuration 'plugin.path' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:13,236] WARN The configuration 'config.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:13,236] WARN The configuration 'offset.flush.interval.ms' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:13,236] WARN The configuration 'key.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:13,236] WARN The configuration 'metrics.context.connect.kafka.cluster.id' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:13,236] WARN The configuration 'status.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:13,236] WARN The configuration 'value.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:13,236] WARN The configuration 'offset.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:13,236] WARN The configuration 'offset.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:13,237] WARN The configuration 'value.converter' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:13,237] WARN The configuration 'key.converter' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:13,237] INFO Kafka version: 6.0.0-ccs (org.apache.kafka.common.utils.AppInfoParser:117)
+[2020-12-10 08:24:13,237] INFO Kafka commitId: 17b744c31e00868b (org.apache.kafka.common.utils.AppInfoParser:118)
+[2020-12-10 08:24:13,237] INFO Kafka startTimeMs: 1607606653237 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2020-12-10 08:24:13,266] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Cluster ID: k63hXRb0SeW0on3FPsxu1w (org.apache.kafka.clients.Metadata:279)
+[2020-12-10 08:24:13,370] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Subscribed to partition(s): connect-offsets-0, connect-offsets-5, connect-offsets-10, connect-offsets-20, connect-offsets-15, connect-offsets-9, connect-offsets-11, connect-offsets-4, connect-offsets-16, connect-offsets-17, connect-offsets-3, connect-offsets-24, connect-offsets-23, connect-offsets-13, connect-offsets-18, connect-offsets-22, connect-offsets-8, connect-offsets-2, connect-offsets-12, connect-offsets-19, connect-offsets-14, connect-offsets-1, connect-offsets-6, connect-offsets-7, connect-offsets-21 (org.apache.kafka.clients.consumer.KafkaConsumer:1120)
+[2020-12-10 08:24:13,377] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-offsets-0 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:13,381] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-offsets-5 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:13,382] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-offsets-10 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:13,383] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-offsets-20 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:13,385] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-offsets-15 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:13,388] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-offsets-9 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:13,388] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-offsets-11 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:13,388] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-offsets-4 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:13,388] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-offsets-16 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:13,390] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-offsets-17 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:13,390] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-offsets-3 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:13,390] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-offsets-24 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:13,391] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-offsets-23 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:13,391] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-offsets-13 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:13,392] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-offsets-18 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:13,392] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-offsets-22 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:13,398] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-offsets-8 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:13,402] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-offsets-2 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:13,402] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-offsets-12 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:13,403] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-offsets-19 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:13,404] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-offsets-14 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:13,405] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-offsets-1 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:13,409] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-offsets-6 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:13,414] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-offsets-7 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:13,414] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-offsets-21 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:13,657] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-8 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:13,665] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-23 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:13,666] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-14 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:13,666] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-11 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:13,667] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-2 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:13,667] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-17 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:13,667] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-5 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:13,667] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-20 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:13,667] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-10 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:13,667] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-7 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:13,667] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-13 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:13,668] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-1 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:13,668] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-16 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:13,668] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-22 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:13,668] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-4 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:13,668] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-19 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:13,668] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-9 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:13,670] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-24 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:13,671] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-12 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:13,671] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-18 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:13,683] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-0 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:13,683] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-15 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:13,684] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-6 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:13,684] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-21 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:13,687] INFO [Consumer clientId=consumer-connect-cluster-1, groupId=connect-cluster] Resetting offset for partition connect-offsets-3 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:13,699] INFO Finished reading KafkaBasedLog for topic connect-offsets (org.apache.kafka.connect.util.KafkaBasedLog:161)
+[2020-12-10 08:24:13,699] INFO Started KafkaBasedLog for topic connect-offsets (org.apache.kafka.connect.util.KafkaBasedLog:163)
+[2020-12-10 08:24:13,699] INFO Finished reading offsets topic and starting KafkaOffsetBackingStore (org.apache.kafka.connect.storage.KafkaOffsetBackingStore:129)
+[2020-12-10 08:24:13,742] INFO Worker started (org.apache.kafka.connect.runtime.Worker:202)
+[2020-12-10 08:24:13,743] INFO Starting KafkaBasedLog with topic connect-status (org.apache.kafka.connect.util.KafkaBasedLog:127)
+[2020-12-10 08:24:13,744] INFO AdminClientConfig values: 
+	bootstrap.servers = [localhost:9090, localhost:9092, localhost:9093, localhost:9094]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:354)
+[2020-12-10 08:24:13,746] WARN The configuration 'config.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:13,746] WARN The configuration 'metrics.context.connect.group.id' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:13,746] WARN The configuration 'status.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:13,746] WARN The configuration 'group.id' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:13,746] WARN The configuration 'plugin.path' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:13,747] WARN The configuration 'config.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:13,747] WARN The configuration 'offset.flush.interval.ms' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:13,747] WARN The configuration 'key.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:13,747] WARN The configuration 'metrics.context.connect.kafka.cluster.id' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:13,747] WARN The configuration 'status.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:13,747] WARN The configuration 'value.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:13,747] WARN The configuration 'offset.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:13,747] WARN The configuration 'offset.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:13,747] WARN The configuration 'value.converter' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:13,747] WARN The configuration 'key.converter' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:13,748] INFO Kafka version: 6.0.0-ccs (org.apache.kafka.common.utils.AppInfoParser:117)
+[2020-12-10 08:24:13,748] INFO Kafka commitId: 17b744c31e00868b (org.apache.kafka.common.utils.AppInfoParser:118)
+[2020-12-10 08:24:13,748] INFO Kafka startTimeMs: 1607606653748 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2020-12-10 08:24:14,142] INFO Created topic (name=connect-status, numPartitions=5, replicationFactor=3, replicasAssignments=null, configs={cleanup.policy=compact}) on brokers at localhost:9090,localhost:9092,localhost:9093,localhost:9094 (org.apache.kafka.connect.util.TopicAdmin:284)
+[2020-12-10 08:24:14,146] INFO ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9090, localhost:9092, localhost:9093, localhost:9094]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-2
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 1
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+ (org.apache.kafka.clients.producer.ProducerConfig:354)
+[2020-12-10 08:24:14,162] WARN The configuration 'config.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,162] WARN The configuration 'metrics.context.connect.group.id' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,163] WARN The configuration 'status.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,163] WARN The configuration 'group.id' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,163] WARN The configuration 'plugin.path' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,163] WARN The configuration 'config.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,163] WARN The configuration 'offset.flush.interval.ms' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,163] WARN The configuration 'key.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,163] WARN The configuration 'metrics.context.connect.kafka.cluster.id' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,163] WARN The configuration 'status.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,163] WARN The configuration 'value.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,164] WARN The configuration 'offset.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,164] WARN The configuration 'offset.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,164] WARN The configuration 'value.converter' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,164] WARN The configuration 'key.converter' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,164] INFO Kafka version: 6.0.0-ccs (org.apache.kafka.common.utils.AppInfoParser:117)
+[2020-12-10 08:24:14,164] INFO Kafka commitId: 17b744c31e00868b (org.apache.kafka.common.utils.AppInfoParser:118)
+[2020-12-10 08:24:14,164] INFO Kafka startTimeMs: 1607606654164 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2020-12-10 08:24:14,165] INFO ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9090, localhost:9092, localhost:9093, localhost:9094]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-connect-cluster-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = connect-cluster
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+ (org.apache.kafka.clients.consumer.ConsumerConfig:354)
+[2020-12-10 08:24:14,187] INFO [Producer clientId=producer-2] Cluster ID: k63hXRb0SeW0on3FPsxu1w (org.apache.kafka.clients.Metadata:279)
+[2020-12-10 08:24:14,202] WARN The configuration 'config.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:14,215] WARN The configuration 'metrics.context.connect.group.id' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:14,215] WARN The configuration 'status.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:14,216] WARN The configuration 'plugin.path' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:14,216] WARN The configuration 'config.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:14,216] WARN The configuration 'offset.flush.interval.ms' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:14,216] WARN The configuration 'key.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:14,216] WARN The configuration 'metrics.context.connect.kafka.cluster.id' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:14,216] WARN The configuration 'status.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:14,216] WARN The configuration 'value.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:14,216] WARN The configuration 'offset.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:14,216] WARN The configuration 'offset.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:14,216] WARN The configuration 'value.converter' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:14,216] WARN The configuration 'key.converter' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:14,216] INFO Kafka version: 6.0.0-ccs (org.apache.kafka.common.utils.AppInfoParser:117)
+[2020-12-10 08:24:14,217] INFO Kafka commitId: 17b744c31e00868b (org.apache.kafka.common.utils.AppInfoParser:118)
+[2020-12-10 08:24:14,217] INFO Kafka startTimeMs: 1607606654216 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2020-12-10 08:24:14,226] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Cluster ID: k63hXRb0SeW0on3FPsxu1w (org.apache.kafka.clients.Metadata:279)
+[2020-12-10 08:24:14,241] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Subscribed to partition(s): connect-status-0, connect-status-4, connect-status-1, connect-status-2, connect-status-3 (org.apache.kafka.clients.consumer.KafkaConsumer:1120)
+[2020-12-10 08:24:14,242] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-status-0 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:14,242] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-status-4 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:14,242] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-status-1 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:14,242] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-status-2 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:14,243] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-status-3 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:14,291] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Resetting offset for partition connect-status-0 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:14,291] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Resetting offset for partition connect-status-3 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:14,292] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Resetting offset for partition connect-status-1 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:14,292] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Resetting offset for partition connect-status-4 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:14,292] INFO [Consumer clientId=consumer-connect-cluster-2, groupId=connect-cluster] Resetting offset for partition connect-status-2 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:14,298] INFO Finished reading KafkaBasedLog for topic connect-status (org.apache.kafka.connect.util.KafkaBasedLog:161)
+[2020-12-10 08:24:14,298] INFO Started KafkaBasedLog for topic connect-status (org.apache.kafka.connect.util.KafkaBasedLog:163)
+[2020-12-10 08:24:14,298] INFO Starting KafkaConfigBackingStore (org.apache.kafka.connect.storage.KafkaConfigBackingStore:265)
+[2020-12-10 08:24:14,299] INFO Starting KafkaBasedLog with topic connect-configs (org.apache.kafka.connect.util.KafkaBasedLog:127)
+[2020-12-10 08:24:14,299] INFO AdminClientConfig values: 
+	bootstrap.servers = [localhost:9090, localhost:9092, localhost:9093, localhost:9094]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:354)
+[2020-12-10 08:24:14,301] WARN The configuration 'config.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:14,301] WARN The configuration 'metrics.context.connect.group.id' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:14,305] WARN The configuration 'status.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:14,309] WARN The configuration 'group.id' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:14,310] WARN The configuration 'plugin.path' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:14,320] WARN The configuration 'config.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:14,320] WARN The configuration 'offset.flush.interval.ms' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:14,320] WARN The configuration 'key.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:14,320] WARN The configuration 'metrics.context.connect.kafka.cluster.id' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:14,320] WARN The configuration 'status.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:14,321] WARN The configuration 'value.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:14,321] WARN The configuration 'offset.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:14,321] WARN The configuration 'offset.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:14,321] WARN The configuration 'value.converter' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:14,321] WARN The configuration 'key.converter' was supplied but isn't a known config. (org.apache.kafka.clients.admin.AdminClientConfig:362)
+[2020-12-10 08:24:14,321] INFO Kafka version: 6.0.0-ccs (org.apache.kafka.common.utils.AppInfoParser:117)
+[2020-12-10 08:24:14,321] INFO Kafka commitId: 17b744c31e00868b (org.apache.kafka.common.utils.AppInfoParser:118)
+[2020-12-10 08:24:14,321] INFO Kafka startTimeMs: 1607606654321 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2020-12-10 08:24:14,451] INFO Created topic (name=connect-configs, numPartitions=1, replicationFactor=3, replicasAssignments=null, configs={cleanup.policy=compact}) on brokers at localhost:9090,localhost:9092,localhost:9093,localhost:9094 (org.apache.kafka.connect.util.TopicAdmin:284)
+[2020-12-10 08:24:14,454] INFO ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9090, localhost:9092, localhost:9093, localhost:9094]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-3
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 2147483647
+	enable.idempotence = false
+	interceptor.classes = []
+	internal.auto.downgrade.txn.commit = false
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 1
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+ (org.apache.kafka.clients.producer.ProducerConfig:354)
+[2020-12-10 08:24:14,476] WARN The configuration 'config.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,476] WARN The configuration 'metrics.context.connect.group.id' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,476] WARN The configuration 'status.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,476] WARN The configuration 'group.id' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,477] WARN The configuration 'plugin.path' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,477] WARN The configuration 'config.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,477] WARN The configuration 'offset.flush.interval.ms' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,477] WARN The configuration 'key.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,477] WARN The configuration 'metrics.context.connect.kafka.cluster.id' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,477] WARN The configuration 'status.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,477] WARN The configuration 'value.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,477] WARN The configuration 'offset.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,477] WARN The configuration 'offset.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,477] WARN The configuration 'value.converter' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,477] WARN The configuration 'key.converter' was supplied but isn't a known config. (org.apache.kafka.clients.producer.ProducerConfig:362)
+[2020-12-10 08:24:14,479] INFO Kafka version: 6.0.0-ccs (org.apache.kafka.common.utils.AppInfoParser:117)
+[2020-12-10 08:24:14,480] INFO Kafka commitId: 17b744c31e00868b (org.apache.kafka.common.utils.AppInfoParser:118)
+[2020-12-10 08:24:14,480] INFO Kafka startTimeMs: 1607606654477 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2020-12-10 08:24:14,480] INFO ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9090, localhost:9092, localhost:9093, localhost:9094]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-connect-cluster-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = connect-cluster
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+ (org.apache.kafka.clients.consumer.ConsumerConfig:354)
+[2020-12-10 08:24:14,500] INFO [Producer clientId=producer-3] Cluster ID: k63hXRb0SeW0on3FPsxu1w (org.apache.kafka.clients.Metadata:279)
+[2020-12-10 08:24:14,623] WARN The configuration 'config.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:14,642] WARN The configuration 'metrics.context.connect.group.id' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:14,643] WARN The configuration 'status.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:14,643] WARN The configuration 'plugin.path' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:14,643] WARN The configuration 'config.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:14,643] WARN The configuration 'offset.flush.interval.ms' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:14,643] WARN The configuration 'key.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:14,643] WARN The configuration 'metrics.context.connect.kafka.cluster.id' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:14,643] WARN The configuration 'status.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:14,643] WARN The configuration 'value.converter.schemas.enable' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:14,643] WARN The configuration 'offset.storage.replication.factor' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:14,643] WARN The configuration 'offset.storage.topic' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:14,644] WARN The configuration 'value.converter' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:14,644] WARN The configuration 'key.converter' was supplied but isn't a known config. (org.apache.kafka.clients.consumer.ConsumerConfig:362)
+[2020-12-10 08:24:14,644] INFO Kafka version: 6.0.0-ccs (org.apache.kafka.common.utils.AppInfoParser:117)
+[2020-12-10 08:24:14,644] INFO Kafka commitId: 17b744c31e00868b (org.apache.kafka.common.utils.AppInfoParser:118)
+[2020-12-10 08:24:14,644] INFO Kafka startTimeMs: 1607606654644 (org.apache.kafka.common.utils.AppInfoParser:119)
+[2020-12-10 08:24:14,664] INFO [Consumer clientId=consumer-connect-cluster-3, groupId=connect-cluster] Cluster ID: k63hXRb0SeW0on3FPsxu1w (org.apache.kafka.clients.Metadata:279)
+[2020-12-10 08:24:14,699] INFO [Consumer clientId=consumer-connect-cluster-3, groupId=connect-cluster] Subscribed to partition(s): connect-configs-0 (org.apache.kafka.clients.consumer.KafkaConsumer:1120)
+[2020-12-10 08:24:14,700] INFO [Consumer clientId=consumer-connect-cluster-3, groupId=connect-cluster] Seeking to EARLIEST offset of partition connect-configs-0 (org.apache.kafka.clients.consumer.internals.SubscriptionState:614)
+[2020-12-10 08:24:14,747] INFO [Consumer clientId=consumer-connect-cluster-3, groupId=connect-cluster] Resetting offset for partition connect-configs-0 to offset 0. (org.apache.kafka.clients.consumer.internals.SubscriptionState:397)
+[2020-12-10 08:24:14,758] INFO Finished reading KafkaBasedLog for topic connect-configs (org.apache.kafka.connect.util.KafkaBasedLog:161)
+[2020-12-10 08:24:14,759] INFO Started KafkaBasedLog for topic connect-configs (org.apache.kafka.connect.util.KafkaBasedLog:163)
+[2020-12-10 08:24:14,759] INFO Started KafkaConfigBackingStore (org.apache.kafka.connect.storage.KafkaConfigBackingStore:280)
+[2020-12-10 08:24:14,759] INFO [Worker clientId=connect-1, groupId=connect-cluster] Herder started (org.apache.kafka.connect.runtime.distributed.DistributedHerder:290)
+[2020-12-10 08:24:14,814] INFO [Worker clientId=connect-1, groupId=connect-cluster] Cluster ID: k63hXRb0SeW0on3FPsxu1w (org.apache.kafka.clients.Metadata:279)
+[2020-12-10 08:24:14,819] INFO [Worker clientId=connect-1, groupId=connect-cluster] Discovered group coordinator kali:9092 (id: 2147483647 rack: null) (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:815)
+[2020-12-10 08:24:14,846] INFO [Worker clientId=connect-1, groupId=connect-cluster] Rebalance started (org.apache.kafka.connect.runtime.distributed.WorkerCoordinator:225)
+[2020-12-10 08:24:14,846] INFO [Worker clientId=connect-1, groupId=connect-cluster] (Re-)joining group (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:553)
+[2020-12-10 08:24:14,879] INFO [Worker clientId=connect-1, groupId=connect-cluster] Join group failed with org.apache.kafka.common.errors.MemberIdRequiredException: The group member needs to have a valid member id before actually entering a consumer group. (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:456)
+[2020-12-10 08:24:14,881] INFO [Worker clientId=connect-1, groupId=connect-cluster] (Re-)joining group (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:553)
+[2020-12-10 08:24:14,994] INFO [Worker clientId=connect-1, groupId=connect-cluster] Successfully joined group with generation 1 (org.apache.kafka.clients.consumer.internals.AbstractCoordinator:504)
+[2020-12-10 08:24:15,010] INFO [Worker clientId=connect-1, groupId=connect-cluster] Joined group at generation 1 with protocol version 2 and got assignment: Assignment{error=0, leader='connect-1-18f0e6f9-2fa0-4853-a640-e763fa08a3f7', leaderUrl='http://127.0.1.1:8083/', offset=-1, connectorIds=[], taskIds=[], revokedConnectorIds=[], revokedTaskIds=[], delay=0} with rebalance delay: 0 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1681)
+[2020-12-10 08:24:15,011] INFO [Worker clientId=connect-1, groupId=connect-cluster] Starting connectors and tasks using config offset -1 (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1208)
+[2020-12-10 08:24:15,011] INFO [Worker clientId=connect-1, groupId=connect-cluster] Finished starting connectors and tasks (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1236)
+[2020-12-10 08:24:15,378] INFO [Worker clientId=connect-1, groupId=connect-cluster] Session key updated (org.apache.kafka.connect.runtime.distributed.DistributedHerder:1570)
+[2020-12-10 08:24:15,684] INFO Started o.e.j.s.ServletContextHandler@c6c82aa{/,null,AVAILABLE} (org.eclipse.jetty.server.handler.ContextHandler:825)
+[2020-12-10 08:24:15,686] INFO REST resources initialized; server is started and ready to handle requests (org.apache.kafka.connect.runtime.rest.RestServer:319)
+[2020-12-10 08:24:15,686] INFO Kafka Connect started (org.apache.kafka.connect.runtime.Connect:57)

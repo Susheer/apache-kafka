@@ -1,0 +1,37 @@
+
+
+run 
+
+docker build -t kafka-cluster  .
+
+
+./run-docker.sh
+
+
+
+thats all....
+
+
+
+
+once start running 
+
+to access docker bash 
+run 
+./getBash.sh
+
+NOTE -> Before u run getBash make sure there is only one conatiner running with name 'kafka-cluster'
+
+if there few more 
+
+stop docker 
+
+run -> docker system prune 
+
+run -> docker build -t kafka-cluster .
+ 
+run -> then run 
+       ./getbash.sh
+
+
+  

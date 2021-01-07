@@ -1,0 +1,78 @@
+
+
+How to run this whole setup.
+
+
+
+Prerequisites;
+1. HOST IP; e.g 192.168.8.128
+
+
+
+
+
+
+
+STEP-1 
+  GO to inside 'kafka' 
+  Find  'filename' server1.properties
+  open server1.properties 
+  assigne HOST IP to  properties named 'advertised.listeners'
+
+  repeat the same for all servers given below
+   server2.properties
+   server3.properties
+   server4.properties
+   server5.properties
+   server6.properties
+   server7.properties
+
+
+Step-2
+  Go to inside 'kafka'
+  Find file named 'connect-distributed.properties'
+  find poropertie named 'bootstrap.servers'
+  Make sure if it point to your HOST-IP with all server's port
+  e.g 192.168.8.128:1092,192.168.8.128:2092....etc
+
+
+
+Step-3 
+  excute startAll.sh
+  press enter 
+ 
+Step-4
+  excute listAll.sh
+  this may take some time give list of all 7 brokers 
+  u may have to for that; keep on excuting this for next few 2 min;
+  if u dont see any broker running 
+   u can excute zoo-connect.sh to access zookeepeer shell
+    in zookeeper shell excute below commands 
+	ls /brokers/ids
+        this comman has to return all broker id e.g [10,20,30,40,50,70]
+
+
+
+Step-5
+   Once all brokers started excute 
+    kafka-connect.sh 
+
+
+Step-6
+  check readme.connectors
+ 
+
+
+------------------------------------------------------------------------------------------------------------------------------
+  There are couple of bashscript in the directory named 'script'
+  List of script and their use.
+  
+  1. listAll.sh -----------> list all 7 brokers with their port 
+  2. startAll.sh ----------> to Start All brokers(servers) at a time in backend
+  3. stopAll.sh  ----------> to Stop all brokers  in single go
+  4. startConnect.sh ------>  to start kafka connect Api.
+  5. zoo-connect.sh --------> to get access it zookeeper shell
+
+ 	
+
+ 

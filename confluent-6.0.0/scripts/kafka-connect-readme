@@ -1,0 +1,84 @@
+
+
+Step-1
+
+   verify if kafka connect is running
+     
+      1. GET  HOST:8083/
+    
+         Response->    {"version":"6.0.0-ccs","commit":"17b744c31e00868b","kafka_cluster_id":"uW7QEwWXQaOB541MYMYLBQ"}
+
+
+
+Step-2 
+  a. list all connectors
+ 
+        GET  HOST:8083/connectors
+          Response : Array of all available connectrors
+
+  b. add new connector
+
+
+     curl -s -X POST -H 'Content-Type: application/json' http://192.168.8.128:8083/connectors -d '{
+    "name" : "mqtt-source",
+   "config" : {
+    "connector.class" : "io.confluent.connect.mqtt.MqttSourceConnector",
+    "tasks.max" : "5",
+	"key.converter":"org.apache.kafka.connect.storage.StringConverter",
+    "value.converter":"org.apache.kafka.connect.converters.ByteArrayConverter",
+    "mqtt.server.uri" : "tcp://mqttbroker.com:1884",
+    "mqtt.topics" : "ION/+/CURRENTALARM",
+    "kafka.topic" :"test6",
+	 "mqtt.username":"" ,
+     "mqtt.password":"",
+    "confluent.topic.bootstrap.servers": "HOST:1092,HOST:2092,HOST:3092",
+    "confluent.topic.replication.factor": "3",
+    "confluent.license":""
+    }
+  }'
+
+
+
+
+ c. Posting sink connector
+   
+    curl -s -X POST -H 'Content-Type: application/json' http://localhost:8083/connectors -d '{
+    "name" : "mongo-sink",
+"config" : {
+    "connector.class": "com.mongodb.kafka.connect.MongoSinkConnector",
+    "tasks.max": "3",
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "transforms": "createKey",
+    "topics": "test6",
+    "transforms.createKey.type": "org.apache.kafka.connect.transforms.ValueToKey",
+    "transforms.createKey.fields": "deviceId",
+    "connection.uri": "mongodb://USER:PASSWORD@HOST/dbname",
+    "database": "dbname",
+    "collection": "kcol",
+    "writemodel.strategy": "com.mongodb.kafka.connect.sink.writemodel.strategy.ReplaceOneBusinessKeyStrategy",
+    "value.projection.type": "allowlist",
+    "value.projection.list": "deviceId",
+    "document.id.strategy": "com.mongodb.kafka.connect.sink.processor.id.strategy.PartialValueStrategy",
+    "value.converter.schemas.enable": "false",
+	"key.converter.schemas.enable": "false",
+    "confluent.license":""
+    }
+}'
+
+
+
+
+
+
+d. Deleting connector
+  curl -s -X DELETE -H 'Content-Type: application/json' http://localhost:8083/connectors/mqtt-source 
+
+
+
+
+
+
+
+
+  
